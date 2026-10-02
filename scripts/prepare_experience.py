@@ -20,7 +20,7 @@ SOURCES = [
     ('spring', 'montage-spring-v1.png', '우리의 봄', '벚꽃과 사진관, 분홍빛 옷을 입고 함께 찍은 사진'),
 ]
 FILMS = [
-    ('promise-174', '너의_행복을_약속할게_본편_2분54초_공유용_720p.mp4', '너의 행복을 약속할게.', 174, 44),
+    ('promise-174-v2', '너의_행복을_약속할게_본편_2분54초_자막_공유용_720p.mp4', '너의 행복을 약속할게.', 174, 44),
     ('our-days', '우리의_모든_날들_시간순_1080p.mp4', '우리의 모든 날들', 510, 57),
 ]
 CREDIT = ('Piano samples: Salamander Grand Piano V3, Alexander Holm, CC BY 3.0; '
@@ -59,7 +59,7 @@ def film_copy(entry):
     dest = OUT / f'{id}.mp4'
     ffmpeg = imageio_ffmpeg.get_ffmpeg_exe()
     if not dest.exists():
-        encoding = ['-c', 'copy'] if id == 'promise-174' else [
+        encoding = ['-c', 'copy'] if id == 'promise-174-v2' else [
             '-vf', 'scale=1280:720:flags=lanczos', '-c:v', 'libx264', '-preset', 'medium',
             '-crf', '24', '-maxrate', '1600k', '-bufsize', '3200k', '-threads', '2',
             '-pix_fmt', 'yuv420p', '-color_primaries', 'bt709', '-color_trc', 'bt709',

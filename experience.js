@@ -53,7 +53,7 @@
   const film = $('#feature-video');
   const play = $('#feature-play');
   const message = $('#feature-message');
-  let filmId = 'promise-174';
+  let filmId = 'promise-174-v2';
   let playRequest = 0;
   let pendingTime = 0;
   const filmPositions = new Map();

@@ -32,8 +32,8 @@ def verify(film):
     assert 'creation_time' not in probe and 'location' not in probe.lower()
     raw = path.read_bytes()
     assert raw.index(b'moov') < raw.index(b'mdat')
-    if film['id'] == 'promise-174':
-        source = ROOT / '결과물/너의_행복을_약속할게_본편_2분54초_공유용_720p.mp4'
+    if film['id'] == 'promise-174-v2':
+        source = ROOT / '결과물/너의_행복을_약속할게_본편_2분54초_자막_공유용_720p.mp4'
         hashes = []
         for target in [source, path]:
             result = subprocess.run([ffmpeg, '-v', 'error', '-i', str(target), '-map', '0:v:0', '-map', '0:a:0',
@@ -41,6 +41,12 @@ def verify(film):
                                     check=True, capture_output=True, text=True)
             hashes.append(result.stdout)
         assert hashes[0] == hashes[1], 'Completed main film picture and sound must remain bit-identical.'
+        previous = ROOT / '결과물/너의_행복을_약속할게_본편_2분54초_공유용_720p.mp4'
+        previous_audio = subprocess.run([ffmpeg, '-v', 'error', '-i', str(previous), '-map', '0:a:0',
+                                        '-c', 'copy', '-f', 'streamhash', '-hash', 'sha256', '-'],
+                                       check=True, capture_output=True, text=True).stdout.strip().split(',')[-1]
+        current_audio = hashes[1].strip().splitlines()[-1].split(',')[-1]
+        assert previous_audio == current_audio, 'Approved main-film audio must not change.'
         print('174-second film: encoded picture and audio match the completed source exactly.', flush=True)
     subprocess.run([ffmpeg, '-v', 'error', '-nostdin', '-threads', '2', '-i', str(path),
                     '-map', '0:v:0', '-map', '0:a:0', '-f', 'null', '-'], check=True, capture_output=True)

@@ -48,11 +48,11 @@
   ],
   "films": [
     {
-      "id": "promise-174",
+      "id": "promise-174-v2",
       "title": "너의 행복을 약속할게.",
       "duration": 174,
-      "src": "assets/keepsakes/promise-174.mp4",
-      "poster": "assets/keepsakes/promise-174-poster.webp"
+      "src": "assets/keepsakes/promise-174-v2.mp4",
+      "poster": "assets/keepsakes/promise-174-v2-poster.webp"
     },
     {
       "id": "our-days",

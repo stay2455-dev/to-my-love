@@ -125,7 +125,7 @@ test('feature film needs a play gesture, selection stays silent, and previous po
   $(doc, '[data-feature="our-days"]').click();
   assert.match(video.src, /our-days\.mp4$/); assert.equal(video.dataset.paused, 'true');
   assert.equal(video.dataset.played, '1'); assert.equal($(doc, '#feature-duration').textContent, '8:30');
-  $(doc, '[data-feature="promise-174"]').click();
+  $(doc, '[data-feature="promise-174-v2"]').click();
   Object.defineProperty(video, 'duration', { value: 174 });
   video.dispatchEvent(new dom.window.Event('loadedmetadata'));
   assert.equal(video.currentTime, 75); assert.equal(video.dataset.played, '1');
@@ -159,7 +159,7 @@ test('archive network failure does not block the cover, montages, or finished fi
   const video = $(doc, '#feature-video');
   video.play = async () => { throw new Error('network'); };
   $(doc, '#feature-play').click(); await tick();
-  assert.ok(!$(doc, '#feature-message').hidden); assert.match($(doc, '#feature-direct').href, /promise-174\.mp4$/);
+  assert.ok(!$(doc, '#feature-message').hidden); assert.match($(doc, '#feature-direct').href, /promise-174-v2\.mp4$/);
   $(doc, '[data-feature="our-days"]').click(); assert.ok($(doc, '#feature-message').hidden);
   assert.match($(doc, '#feature-direct').href, /our-days\.mp4$/); dom.window.close();
 });
@@ -167,7 +167,7 @@ test('archive network failure does not block the cover, montages, or finished fi
 test('recipient copy has no production notes, placeholder language, invented dates, or technical labels', async () => {
   const dom = await setup(); const doc = dom.window.document;
   const copy = doc.body.textContent + $$(doc, '[aria-label], img[alt]').map(x => x.getAttribute('aria-label') || x.alt).join(' ');
-  assert.doesNotMatch(copy, /제작|프롬프트|생성형|AI|EXIF|촬영일 미확인|임시 페이지|준비 중|준비중|개발|분류표|메타데이터|몇 개월|3개월|4개월/i);
+  assert.doesNotMatch(copy, /제작|프롬프트|생성형|AI|EXIF|촬영일 미확인|임시 페이지|준비 중|준비중|개발|분류표|메타데이터|몇 개월|3개월|4개월|자막본|최종본/i);
   assert.equal($(doc, '#year-filter option[value="undated"]').textContent, '언젠가의 우리');
   assert.ok(!doc.querySelector('video[autoplay]')); assert.equal($(doc, 'link[rel="license"]').getAttribute('href'), 'assets/keepsakes/music-credits.txt');
   dom.window.close();
@@ -211,11 +211,11 @@ test('canceled playback and rejected promises from a previous film do not show f
 
 test('the latest 174-second film is the default everywhere, without the earlier summary option', async () => {
   const dom = await setup(); const doc = dom.window.document;
-  assert.match($(doc, '#feature-video').src, /promise-174\.mp4$/);
-  assert.match($(doc, '#feature-video').poster, /promise-174-poster\.webp$/);
+  assert.match($(doc, '#feature-video').src, /promise-174-v2\.mp4$/);
+  assert.match($(doc, '#feature-video').poster, /promise-174-v2-poster\.webp$/);
   assert.equal($(doc, '#feature-title').textContent, '너의 행복을 약속할게.');
   assert.equal($(doc, '#feature-duration').textContent, '2:54');
-  assert.equal($(doc, '[data-feature][aria-current="true"]').dataset.feature, 'promise-174');
+  assert.equal($(doc, '[data-feature][aria-current="true"]').dataset.feature, 'promise-174-v2');
   assert.deepEqual(keepsakes.films.map(film => film.duration), [174, 510]);
   assert.ok(!$(doc, '[data-feature="promise"]')); assert.doesNotMatch(doc.body.textContent, /3:12/);
   dom.window.close();
