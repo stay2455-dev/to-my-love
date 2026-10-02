@@ -3,204 +3,82 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#f7f4ed" />
-    <meta name="description" content="사랑하는 너에게, 천천히 써 내려가는 우리의 이야기." />
-    <meta name="robots" content="noindex, nofollow" />
-    <title>To my love — 너에게 보내는 작은 마음</title>
-    <style>
-      :root {
-        color-scheme: light;
-        --paper: #f7f4ed;
-        --ink: #31473f;
-        --muted: #6b756d;
-        --line: #d9dcd1;
-        --rose: #a74e50;
-      }
-
-      * { box-sizing: border-box; }
-      body {
-        margin: 0;
-        min-width: 280px;
-        min-height: 100svh;
-        background: var(--paper);
-        color: var(--ink);
-        font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
-        -webkit-font-smoothing: antialiased;
-      }
-      .page {
-        width: min(1080px, calc(100% - 64px));
-        min-height: 100svh;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-      }
-      header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 31px 0;
-        border-bottom: 1px solid var(--line);
-      }
-      .wordmark {
-        font-family: Georgia, "Times New Roman", serif;
-        font-size: 24px;
-        font-style: italic;
-        letter-spacing: -1px;
-      }
-      .edition {
-        color: var(--muted);
-        font-size: 10px;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-      }
-      main {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 64px 0 70px;
-      }
-      .eyebrow {
-        margin: 0 0 24px;
-        color: var(--rose);
-        font-size: 10px;
-        font-weight: 600;
-        letter-spacing: 3px;
-      }
-      h1 {
-        margin: 0;
-        font-family: "Batang", "AppleMyungjo", "Noto Serif CJK KR", serif;
-        font-size: clamp(30px, 4.3vw, 49px);
-        font-weight: 400;
-        line-height: 1.65;
-        letter-spacing: -2px;
-        word-break: keep-all;
-      }
-      .intro {
-        margin: 19px 0 37px;
-        color: var(--muted);
-        font-size: 13px;
-        line-height: 1.9;
-        word-break: keep-all;
-      }
-      .letter {
-        width: min(100%, 392px);
-        background: #fffdf8;
-        border: 1px solid #e3dfd4;
-        border-radius: 3px;
-        box-shadow: 0 12px 30px #31473f08, 3px 4px 0 -1px #f1eee5, 3px 4px 0 0 #e3dfd4;
-        text-align: left;
-        transition: box-shadow 180ms ease;
-      }
-      .letter:hover { box-shadow: 0 14px 34px #31473f12, 3px 4px 0 -1px #f1eee5, 3px 4px 0 0 #e3dfd4; }
-      summary {
-        display: block;
-        list-style: none;
-        padding: 29px 30px 23px;
-        cursor: pointer;
-        border-radius: 3px;
-      }
-      summary::-webkit-details-marker { display: none; }
-      summary:focus-visible { outline: 2px solid var(--rose); outline-offset: 5px; }
-      .envelope-top { display: flex; align-items: center; justify-content: space-between; }
-      .recipient { font-family: Georgia, serif; font-size: 27px; font-style: italic; }
-      .stamp {
-        width: 43px;
-        height: 50px;
-        display: grid;
-        place-items: center;
-        color: var(--rose);
-        background: #f5e8e2;
-        border: 1px dashed #bd9290;
-        outline: 4px solid #f5e8e2;
-      }
-      .stamp svg { width: 20px; height: 20px; }
-      .letter-caption { display: block; margin-top: 18px; color: var(--muted); font-size: 12px; }
-      .letter-action {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 29px;
-        padding-top: 17px;
-        border-top: 1px solid #e8e4db;
-        font-size: 12px;
-      }
-      .arrow { font-size: 20px; line-height: 1; transition: transform 180ms ease; }
-      details[open] .arrow { transform: rotate(90deg); }
-      .when-open { display: none; }
-      details[open] .when-open { display: inline; }
-      details[open] .when-closed { display: none; }
-      .note { padding: 0 30px 27px; }
-      .note p { margin: 0; font-size: 13px; line-height: 2.1; word-break: keep-all; }
-      .note .signature { margin-top: 15px; color: var(--rose); font-family: Georgia, serif; font-style: italic; }
-      .waiting { display: flex; align-items: center; gap: 7px; margin: 25px 0 0; font-size: 10px; color: var(--muted); }
-      .dot { width: 4px; height: 4px; border-radius: 50%; background: #8c9b86; }
-      footer {
-        display: flex;
-        justify-content: space-between;
-        gap: 16px;
-        padding: 22px 0 26px;
-        border-top: 1px solid var(--line);
-        color: var(--muted);
-        font-size: 10px;
-      }
-      footer span:last-child { font-family: Georgia, serif; font-style: italic; font-size: 12px; }
-      @media (max-width: 540px) {
-        .page { width: calc(100% - 40px); }
-        header { padding: 24px 0; }
-        .wordmark { font-size: 23px; }
-        .edition { font-size: 8px; letter-spacing: 1.4px; }
-        main { padding: 46px 0 50px; }
-        .eyebrow { font-size: 9px; margin-bottom: 23px; }
-        h1 { font-size: clamp(27px, 7.8vw, 36px); letter-spacing: -1.3px; }
-        .intro { font-size: 12px; margin-bottom: 30px; }
-        summary { padding: 26px 24px 21px; }
-        .note { padding: 0 24px 25px; }
-        footer { font-size: 9px; }
-      }
-      @media (prefers-reduced-motion: reduce) {
-        *, *::before, *::after { transition: none !important; }
-      }
-    </style>
+    <meta name="theme-color" content="#f6f2ea" />
+    <meta name="description" content="우리의 사진첩. 함께한 날들을 한 장씩." />
+    <meta name="robots" content="noindex, nofollow, noarchive" />
+    <meta name="referrer" content="no-referrer" />
+    <title>우리 사진첩</title>
+    <link rel="icon" type="image/svg+xml" href="assets/album-mark.svg" />
+    <link rel="preload" href="assets/fonts/MaruBuri-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="styles.css?v=album-1" />
+    <script type="module" src="app.js?v=album-1"></script>
   </head>
   <body>
-    <div class="page">
-      <header>
-        <span class="wordmark" lang="en">to my love.</span>
-        <span class="edition" lang="en">A little place for us</span>
-      </header>
-      <main>
-        <p class="eyebrow" lang="en">EVERY STORY STARTS WITH YOU</p>
-        <h1>너에게 전하고 싶은<br />이야기가 있어.</h1>
-        <p class="intro">함께한 순간과 아직 전하지 못한 마음을<br />이곳에 하나씩 담아보려고 해.</p>
-        <details class="letter">
-          <summary>
-            <span class="envelope-top">
-              <span class="recipient" lang="en">Dear, you</span>
-              <span class="stamp" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-9-5.4-9-12a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 6.6-9 12-9 12Z" /></svg>
-              </span>
-            </span>
-            <span class="letter-caption">오직 너를 위한 작은 편지</span>
-            <span class="letter-action">
-              <span class="when-closed">편지 열어보기</span>
-              <span class="when-open">편지 접어두기</span>
-              <span class="arrow" aria-hidden="true">↗</span>
-            </span>
-          </summary>
-          <div class="note">
-            <p>조금만 기다려줘.<br />우리의 이야기를 천천히 준비하고 있어.<br />이 작은 공간이 너에게 따뜻한 선물이 되기를.</p>
-            <p class="signature" lang="en">With love, always.</p>
-          </div>
-        </details>
-        <p class="waiting"><span class="dot" aria-hidden="true"></span>우리의 이야기를 준비하고 있어요</p>
-      </main>
-      <footer>
-        <span>사랑하는 사람에게 보내는 작은 마음</span>
-        <span lang="en">Made with love.</span>
-      </footer>
-    </div>
+    <a class="skip-link" href="#album">사진첩으로 건너뛰기</a>
+    <header class="site-header page-width" id="top">
+      <a class="wordmark" href="#top" aria-label="우리 사진첩 처음으로">
+        <svg class="album-mark" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect x="4.5" y="3.5" width="19" height="22" rx="1"/><path d="M9 4v21M2 9h5M2 15h5M2 21h5"/><rect x="12.5" y="9" width="7" height="9" rx=".4"/></svg>
+        우리 사진첩
+      </a>
+      <nav aria-label="주요 메뉴"><a href="#album">사진첩</a><a href="#collected">모아둔 사진</a><a href="#films">영상</a></nav>
+    </header>
+    <main>
+      <section class="hero page-width" aria-labelledby="cover-title">
+        <div class="hero-copy">
+          <p class="cover-years">2024 — 2026</p>
+          <h1 id="cover-title">우리의<br />사진첩</h1>
+          <p class="cover-range">2024. 04 — 2026. 05</p>
+          <a class="text-link cover-link" href="#album">한 장씩 넘겨보기 <span aria-hidden="true">↘</span></a>
+        </div>
+        <div class="hero-photos">
+          <a class="cover-photo main-photo" href="assets/album/photos/eafc9b315fb5.webp" data-memory="eafc9b315fb5" aria-label="2024년 5월 18일, 바다 위에서 함께 찍은 사진 크게 보기">
+            <img src="assets/album/photos/eafc9b315fb5.webp" width="1800" height="1350" alt="햇빛이 비치는 바다에서 함께 웃고 있는 우리" fetchpriority="high" />
+            <span class="print-caption"><time datetime="2024-05-18">2024. 05. 18</time><span aria-hidden="true">↗</span></span>
+          </a>
+          <a class="cover-photo little-photo" href="assets/album/photos/e21a7c31a53b.webp" data-memory="e21a7c31a53b" aria-label="2024년 4월 27일, 바닷가 사진 크게 보기">
+            <img src="assets/album/thumbs/e21a7c31a53b.webp" width="383" height="680" alt="푸른 저녁 바다 앞에 서 있는 너" />
+            <span class="print-caption"><time datetime="2024-04-27">2024. 04. 27</time></span>
+          </a>
+        </div>
+        <div class="cover-bottom" aria-hidden="true"><span>사진 · 일상 · 우리</span><span>↓</span></div>
+      </section>
+      <section id="album" class="album-section page-width" aria-labelledby="album-title">
+        <div class="section-heading"><div><span class="section-index" aria-hidden="true">01</span><h2 id="album-title">함께한 날들</h2></div><p class="section-note">오래된 사진부터, 차례로</p></div>
+        <div class="album-toolbar">
+          <nav class="year-tabs" aria-label="사진 연도 선택">
+            <button type="button" data-year="all" aria-pressed="true">전체</button>
+            <button type="button" data-year="2024" aria-pressed="false">2024</button>
+            <button type="button" data-year="2025" aria-pressed="false">2025</button>
+            <button type="button" data-year="2026" aria-pressed="false">2026</button>
+          </nav>
+          <span id="album-count" class="album-count" aria-live="polite"></span>
+        </div>
+        <div id="timeline" class="timeline" aria-busy="true"><p class="load-message" role="status">사진을 펼치고 있어요.</p></div>
+      </section>
+      <section id="collected" class="collected-section" aria-labelledby="collected-title">
+        <div class="page-width">
+          <div class="section-heading"><div><span class="section-index" aria-hidden="true">02</span><h2 id="collected-title">모아둔 사진</h2></div><span id="collected-count" class="section-note"></span></div>
+          <div id="collected-grid" class="collected-grid"></div>
+        </div>
+      </section>
+      <section id="films" class="films-section page-width" aria-labelledby="films-title">
+        <div class="section-heading"><div><span class="section-index" aria-hidden="true">03</span><h2 id="films-title">움직이는 순간</h2></div><span id="films-count" class="section-note"></span></div>
+        <div id="film-grid" class="film-grid"></div>
+      </section>
+      <noscript><p class="no-script page-width">사진첩을 펼치려면 브라우저에서 JavaScript를 켜주세요. 표지 사진은 눌러서 크게 볼 수 있어요.</p></noscript>
+    </main>
+    <footer class="site-footer page-width"><span class="footer-title">우리 사진첩</span><span class="footer-years">2024 — 2026</span><a href="#top">처음으로 <span aria-hidden="true">↑</span></a></footer>
+    <dialog id="viewer" class="viewer" aria-labelledby="viewer-title">
+      <div class="viewer-shell">
+        <header class="viewer-header"><div><h2 id="viewer-title">사진</h2><p id="viewer-date"></p></div><button type="button" id="viewer-close" class="icon-button" aria-label="사진첩으로 돌아가기"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></header>
+        <div class="viewer-stage" id="viewer-stage">
+          <button type="button" id="viewer-prev" class="icon-button viewer-arrow previous" aria-label="이전 사진"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m14 5-7 7 7 7"/></svg></button>
+          <div id="viewer-media" class="viewer-media"></div>
+          <button type="button" id="viewer-next" class="icon-button viewer-arrow next" aria-label="다음 사진"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m10 5 7 7-7 7"/></svg></button>
+        </div>
+        <div class="viewer-caption"><span id="viewer-position" aria-live="polite"></span><a id="viewer-original" target="_blank" rel="noopener">크게 보기 <span aria-hidden="true">↗</span></a></div>
+        <div id="viewer-strip" class="viewer-strip" aria-label="이 묶음의 사진"></div>
+      </div>
+    </dialog>
   </body>
 </html>

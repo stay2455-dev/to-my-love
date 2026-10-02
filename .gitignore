@@ -6,3 +6,7 @@ node_modules/
 Thumbs.db
 *.log
 .superdesign/
+/사진/
+/planning/
+__pycache__/
+*.pyc
