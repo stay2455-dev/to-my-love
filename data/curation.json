@@ -1,0 +1,1609 @@
+{
+  "version": 1,
+  "categories": [
+    {
+      "id": "water",
+      "title": "바다와 물가",
+      "coverId": "5a6400c219c1"
+    },
+    {
+      "id": "walk",
+      "title": "산책과 계절",
+      "coverId": "d008fa9dc488"
+    },
+    {
+      "id": "table",
+      "title": "밥과 커피",
+      "coverId": "09eb0cabfaf4"
+    },
+    {
+      "id": "play",
+      "title": "놀러 간 날",
+      "coverId": "80581a0c3978"
+    },
+    {
+      "id": "portrait",
+      "title": "네컷과 사진관",
+      "coverId": "a463c8a63ae2"
+    },
+    {
+      "id": "everyday",
+      "title": "소소한 일상",
+      "coverId": "971f9d378efe"
+    }
+  ],
+  "stories": [
+    {
+      "id": "memory-a9028de1c034",
+      "category": "walk",
+      "title": "밤의 정자",
+      "itemIds": [
+        "a9028de1c034"
+      ],
+      "coverId": "a9028de1c034",
+      "alt": "조명이 켜진 정자를 뒤로 하고 함께 찍은 사진",
+      "keywords": [
+        "밤",
+        "산책",
+        "야경"
+      ]
+    },
+    {
+      "id": "memory-8d224698d0cb",
+      "category": "walk",
+      "title": "불빛을 따라 걷던 밤",
+      "itemIds": [
+        "8d224698d0cb",
+        "e7437f11e368"
+      ],
+      "coverId": "e7437f11e368",
+      "alt": "불이 켜진 정자와 나무 앞에서 찍은 사진",
+      "keywords": [
+        "밤",
+        "산책",
+        "야경"
+      ]
+    },
+    {
+      "id": "memory-07e854e3451b",
+      "category": "walk",
+      "title": "풀밭에서",
+      "itemIds": [
+        "07e854e3451b",
+        "79d6483f2a69"
+      ],
+      "coverId": "79d6483f2a69",
+      "alt": "풀과 나무가 있는 야외에서 함께 찍은 사진",
+      "keywords": [
+        "봄",
+        "산책",
+        "초록"
+      ]
+    },
+    {
+      "id": "memory-e21a7c31a53b",
+      "category": "water",
+      "title": "저녁 바닷가",
+      "itemIds": [
+        "e21a7c31a53b"
+      ],
+      "coverId": "e21a7c31a53b",
+      "alt": "푸른 저녁 바닷가에 서 있는 모습",
+      "keywords": [
+        "여행",
+        "바다",
+        "해변"
+      ]
+    },
+    {
+      "id": "memory-d758ae312323",
+      "category": "walk",
+      "title": "밤의 산책",
+      "itemIds": [
+        "d758ae312323",
+        "6c5ac8b127d5"
+      ],
+      "coverId": "6c5ac8b127d5",
+      "alt": "밤에 밖에서 쉬며 찍은 사진",
+      "keywords": [
+        "밤",
+        "산책",
+        "벤치"
+      ]
+    },
+    {
+      "id": "memory-e05469b07842",
+      "category": "portrait",
+      "title": "사진 고르는 시간",
+      "itemIds": [
+        "e05469b07842"
+      ],
+      "coverId": "e05469b07842",
+      "alt": "여러 표정이 나란히 담긴 사진 선택 화면",
+      "keywords": [
+        "네컷",
+        "사진관",
+        "머리띠"
+      ]
+    },
+    {
+      "id": "memory-971f9d378efe",
+      "category": "everyday",
+      "title": "나란히 앉아서",
+      "itemIds": [
+        "971f9d378efe"
+      ],
+      "coverId": "971f9d378efe",
+      "alt": "실내 의자에 나란히 앉아 브이하는 모습",
+      "keywords": [
+        "일상",
+        "의자",
+        "교실"
+      ]
+    },
+    {
+      "id": "memory-ae910aa32448",
+      "category": "walk",
+      "title": "밤거리에서",
+      "itemIds": [
+        "ae910aa32448"
+      ],
+      "coverId": "ae910aa32448",
+      "alt": "가로등이 켜진 밤거리에서 함께 찍은 사진",
+      "keywords": [
+        "밤",
+        "산책",
+        "거리"
+      ]
+    },
+    {
+      "id": "memory-52e899c7a985",
+      "category": "water",
+      "title": "배 위에서",
+      "itemIds": [
+        "52e899c7a985",
+        "9cb45c51c103",
+        "7d9cb510ed62",
+        "7708292b2964",
+        "db92a01b6bf4",
+        "0a704dd22c77",
+        "c46ef7849f5d",
+        "f5a6849e5039",
+        "eafc9b315fb5",
+        "810c1534faa2",
+        "04fb93875169",
+        "8eea25125e27",
+        "b5a350e5f71a",
+        "53c7e5564e3c"
+      ],
+      "coverId": "eafc9b315fb5",
+      "alt": "햇빛이 비치는 배 난간 옆에서 함께 찍은 사진",
+      "keywords": [
+        "여행",
+        "바다",
+        "배",
+        "햇살"
+      ]
+    },
+    {
+      "id": "memory-cfb66c9e7d81",
+      "category": "walk",
+      "title": "꽃길에서",
+      "itemIds": [
+        "cfb66c9e7d81",
+        "81b43be008f2",
+        "f619cf337ede"
+      ],
+      "coverId": "81b43be008f2",
+      "alt": "꽃이 핀 산책길과 초록 나무 옆에서 찍은 사진",
+      "keywords": [
+        "꽃",
+        "봄",
+        "산책",
+        "초록"
+      ]
+    },
+    {
+      "id": "memory-075bbaa58a31",
+      "category": "water",
+      "title": "밤바다",
+      "itemIds": [
+        "075bbaa58a31",
+        "9fc52a1a4822",
+        "94750e4a0811",
+        "00efef6a6340"
+      ],
+      "coverId": "9fc52a1a4822",
+      "alt": "불빛이 비치는 밤바닷가에서 함께 찍은 사진",
+      "keywords": [
+        "여행",
+        "바다",
+        "야경",
+        "밤"
+      ]
+    },
+    {
+      "id": "memory-df5b958c51be",
+      "category": "water",
+      "title": "맑은 날의 바닷가",
+      "itemIds": [
+        "df5b958c51be",
+        "a23e897904ab"
+      ],
+      "coverId": "df5b958c51be",
+      "alt": "맑은 하늘과 바닷가를 뒤로 하고 찍은 사진",
+      "keywords": [
+        "여행",
+        "바다",
+        "해변",
+        "나들이"
+      ]
+    },
+    {
+      "id": "memory-49658021dbf4",
+      "category": "walk",
+      "title": "가로등 아래",
+      "itemIds": [
+        "49658021dbf4"
+      ],
+      "coverId": "49658021dbf4",
+      "alt": "가로등과 나무가 있는 밤거리에서 함께 찍은 사진",
+      "keywords": [
+        "밤",
+        "산책",
+        "거리"
+      ]
+    },
+    {
+      "id": "memory-feb35a056b36",
+      "category": "everyday",
+      "title": "책상 사이에서",
+      "itemIds": [
+        "feb35a056b36",
+        "c3550b870a2c"
+      ],
+      "coverId": "feb35a056b36",
+      "alt": "책상이 놓인 실내에서 포즈를 취하는 모습",
+      "keywords": [
+        "일상",
+        "교실",
+        "장난"
+      ]
+    },
+    {
+      "id": "memory-5df959917927",
+      "category": "play",
+      "title": "페달을 밟으며",
+      "itemIds": [
+        "5df959917927",
+        "50c9727d1953",
+        "eb9619379610",
+        "49f797b1df1e"
+      ],
+      "coverId": "5df959917927",
+      "alt": "노란 차양이 달린 페달차를 함께 타는 모습",
+      "keywords": [
+        "자전거",
+        "페달차",
+        "공원",
+        "나들이"
+      ]
+    },
+    {
+      "id": "memory-b0a8a2de5e8d",
+      "category": "walk",
+      "title": "공원 한 바퀴",
+      "itemIds": [
+        "b0a8a2de5e8d",
+        "15516ef0d182",
+        "7f9cdaa0ebb9",
+        "500278d1085a",
+        "0838c533f293"
+      ],
+      "coverId": "15516ef0d182",
+      "alt": "물가의 공원과 꽃 장식 앞에서 함께 찍은 사진",
+      "keywords": [
+        "산책",
+        "공원",
+        "꽃",
+        "다리",
+        "초록"
+      ]
+    },
+    {
+      "id": "memory-6f9ad8780a9e",
+      "category": "play",
+      "title": "관람차 안에서",
+      "itemIds": [
+        "6f9ad8780a9e",
+        "5b7a2c817969",
+        "bf463d1245b6",
+        "693eb633055d",
+        "2c3c42f16e62",
+        "7216eed5c4e2"
+      ],
+      "coverId": "5b7a2c817969",
+      "alt": "야경이 보이는 관람차 안에서 찍은 사진",
+      "keywords": [
+        "관람차",
+        "놀이공원",
+        "야경"
+      ]
+    },
+    {
+      "id": "memory-229cd9bdaf04",
+      "category": "table",
+      "title": "커피 한 잔",
+      "itemIds": [
+        "229cd9bdaf04",
+        "af55cd6a1d36",
+        "6189ff0ee9da"
+      ],
+      "coverId": "af55cd6a1d36",
+      "alt": "카페에서 커피잔을 앞에 두고 찍은 사진",
+      "keywords": [
+        "커피",
+        "카페",
+        "음료"
+      ]
+    },
+    {
+      "id": "memory-c197557e1a2e",
+      "category": "everyday",
+      "title": "의자에 앉아서",
+      "itemIds": [
+        "c197557e1a2e"
+      ],
+      "coverId": "c197557e1a2e",
+      "alt": "실내 의자에 앉아 웃는 모습",
+      "keywords": [
+        "일상",
+        "교실",
+        "의자"
+      ]
+    },
+    {
+      "id": "memory-62b527d74eba",
+      "category": "portrait",
+      "title": "사진관 거울 앞에서",
+      "itemIds": [
+        "62b527d74eba",
+        "793f2263c31e",
+        "1f8ed6ff26fd",
+        "e60d978f5b61",
+        "31707dfea0ec"
+      ],
+      "coverId": "e60d978f5b61",
+      "alt": "사진관에서 소품을 들거나 거울을 보며 함께 찍은 사진",
+      "keywords": [
+        "네컷",
+        "사진관",
+        "거울",
+        "선글라스"
+      ]
+    },
+    {
+      "id": "memory-daf0018eacac",
+      "category": "water",
+      "title": "밤바람",
+      "itemIds": [
+        "daf0018eacac"
+      ],
+      "coverId": "daf0018eacac",
+      "alt": "밤바다 옆 나무 데크에 서 있는 모습",
+      "keywords": [
+        "바다",
+        "여행",
+        "해변",
+        "밤"
+      ]
+    },
+    {
+      "id": "memory-8fee3c46ea07",
+      "category": "table",
+      "title": "빙수 먹던 날",
+      "itemIds": [
+        "8fee3c46ea07"
+      ],
+      "coverId": "8fee3c46ea07",
+      "alt": "빙수와 커피가 놓인 카페 테이블에서 찍은 사진",
+      "keywords": [
+        "빙수",
+        "디저트",
+        "카페",
+        "커피"
+      ]
+    },
+    {
+      "id": "memory-5707cd108123",
+      "category": "table",
+      "title": "같이 먹는 한 끼",
+      "itemIds": [
+        "5707cd108123"
+      ],
+      "coverId": "5707cd108123",
+      "alt": "접시에 담긴 음식을 앞에 두고 마주 앉은 모습",
+      "keywords": [
+        "식사",
+        "밥",
+        "음식",
+        "레스토랑"
+      ]
+    },
+    {
+      "id": "memory-b893ccc91955",
+      "category": "portrait",
+      "title": "네컷 속 표정",
+      "itemIds": [
+        "b893ccc91955"
+      ],
+      "coverId": "b893ccc91955",
+      "alt": "알록달록한 캐릭터 테두리 안에 담긴 네컷사진",
+      "keywords": [
+        "네컷",
+        "사진관",
+        "인사이드아웃"
+      ]
+    },
+    {
+      "id": "memory-0012a90cfeab",
+      "category": "play",
+      "title": "놀이공원에서",
+      "itemIds": [
+        "0012a90cfeab",
+        "2acec1e1dbc7",
+        "78d7c9117b8d",
+        "5812c9b7c602",
+        "80581a0c3978",
+        "730df8aa6afe",
+        "0540072ce3cb",
+        "77b41e600faa",
+        "3d729e69ec3d",
+        "504c081b7dbe",
+        "1104514eeb0f",
+        "0751917b8644"
+      ],
+      "coverId": "80581a0c3978",
+      "alt": "놀이공원과 회전목마에서 함께 찍은 사진",
+      "keywords": [
+        "놀이공원",
+        "회전목마",
+        "꽃다발",
+        "나들이"
+      ]
+    },
+    {
+      "id": "memory-623ee1273226",
+      "category": "play",
+      "title": "오락실에서",
+      "itemIds": [
+        "623ee1273226",
+        "c106a92c8931"
+      ],
+      "coverId": "c106a92c8931",
+      "alt": "게임 기계 앞에서 함께 찍은 사진",
+      "keywords": [
+        "오락실",
+        "게임",
+        "놀거리"
+      ]
+    },
+    {
+      "id": "memory-c27a53fbe22b",
+      "category": "portrait",
+      "title": "빨간 니트, 네컷",
+      "itemIds": [
+        "c27a53fbe22b"
+      ],
+      "coverId": "c27a53fbe22b",
+      "alt": "빨간 니트를 입고 함께 남긴 네컷사진",
+      "keywords": [
+        "네컷",
+        "사진관",
+        "빨간",
+        "니트"
+      ]
+    },
+    {
+      "id": "memory-185fff269303",
+      "category": "table",
+      "title": "밥 먹기 전",
+      "itemIds": [
+        "185fff269303"
+      ],
+      "coverId": "185fff269303",
+      "alt": "음식이 놓인 식탁 앞에서 브이하는 모습",
+      "keywords": [
+        "식사",
+        "밥",
+        "음식"
+      ]
+    },
+    {
+      "id": "memory-86b38f6822cc",
+      "category": "play",
+      "title": "라켓을 들고",
+      "itemIds": [
+        "86b38f6822cc",
+        "3130fb4f489b",
+        "2e35d1fb40c7",
+        "9153250b637a"
+      ],
+      "coverId": "3130fb4f489b",
+      "alt": "라켓을 들고 실내 체육관에서 함께 찍은 사진",
+      "keywords": [
+        "운동",
+        "배드민턴",
+        "라켓",
+        "체육관"
+      ]
+    },
+    {
+      "id": "memory-788c6238923b",
+      "category": "table",
+      "title": "식탁 건너편",
+      "itemIds": [
+        "788c6238923b",
+        "d7bacc8dc6b9"
+      ],
+      "coverId": "788c6238923b",
+      "alt": "식당 테이블 건너편에서 턱을 괴고 있는 모습",
+      "keywords": [
+        "식사",
+        "밥",
+        "식당"
+      ]
+    },
+    {
+      "id": "memory-429100a2f9a0",
+      "category": "play",
+      "title": "한복 입고 나들이",
+      "itemIds": [
+        "429100a2f9a0",
+        "200e200032a1"
+      ],
+      "coverId": "429100a2f9a0",
+      "alt": "한복을 입고 여럿이 야외에서 찍은 사진",
+      "keywords": [
+        "한복",
+        "나들이",
+        "공원",
+        "단체"
+      ]
+    },
+    {
+      "id": "memory-26d962c891f2",
+      "category": "walk",
+      "title": "나무 사이로",
+      "itemIds": [
+        "26d962c891f2",
+        "daf3cd73dc7e"
+      ],
+      "coverId": "26d962c891f2",
+      "alt": "곧게 뻗은 나무 사이의 길에 서 있는 모습",
+      "keywords": [
+        "산책",
+        "숲",
+        "가을",
+        "나무"
+      ]
+    },
+    {
+      "id": "memory-3bc404d62ebf",
+      "category": "walk",
+      "title": "가을 햇살 아래",
+      "itemIds": [
+        "3bc404d62ebf",
+        "2c0fcfbacee1",
+        "5c6f222afdbe",
+        "ac98048e00cf"
+      ],
+      "coverId": "3bc404d62ebf",
+      "alt": "노랗게 물든 나무 아래에서 함께 찍은 사진",
+      "keywords": [
+        "가을",
+        "단풍",
+        "은행나무",
+        "산책",
+        "햇살"
+      ]
+    },
+    {
+      "id": "memory-8da9d3234fc2",
+      "category": "play",
+      "title": "밤의 나들이",
+      "itemIds": [
+        "8da9d3234fc2"
+      ],
+      "coverId": "8da9d3234fc2",
+      "alt": "야외에 모인 사람들 사이에서 함께 찍은 사진",
+      "keywords": [
+        "밤",
+        "야외",
+        "나들이"
+      ]
+    },
+    {
+      "id": "memory-7b0d87e8d763",
+      "category": "table",
+      "title": "손에 쥔 간식",
+      "itemIds": [
+        "7b0d87e8d763",
+        "4b2680d688bf"
+      ],
+      "coverId": "4b2680d688bf",
+      "alt": "한복을 입고 간식과 음료를 들고 찍은 사진",
+      "keywords": [
+        "한복",
+        "간식",
+        "음료"
+      ]
+    },
+    {
+      "id": "memory-b43f828aec36",
+      "category": "everyday",
+      "title": "나란히 브이",
+      "itemIds": [
+        "b43f828aec36"
+      ],
+      "coverId": "b43f828aec36",
+      "alt": "실내 벽 앞에서 나란히 브이하는 모습",
+      "keywords": [
+        "일상",
+        "셀카"
+      ]
+    },
+    {
+      "id": "memory-09d9c8ba87b7",
+      "category": "play",
+      "title": "실내 나들이",
+      "itemIds": [
+        "09d9c8ba87b7",
+        "a0182c16daa2",
+        "a4c8f84f8290",
+        "7b04992fd089",
+        "3c7aae18310b",
+        "b6546b971da8",
+        "d2db18dff31c"
+      ],
+      "coverId": "b6546b971da8",
+      "alt": "높은 유리 지붕과 풍선 장식 아래에서 함께 찍은 사진",
+      "keywords": [
+        "실내",
+        "나들이",
+        "풍선"
+      ]
+    },
+    {
+      "id": "memory-a982a04c7d95",
+      "category": "play",
+      "title": "불빛 가득한 밤",
+      "itemIds": [
+        "a982a04c7d95",
+        "bedba95f0642",
+        "cc051238f63d"
+      ],
+      "coverId": "cc051238f63d",
+      "alt": "도시의 불빛과 사람들 사이에서 함께 찍은 사진",
+      "keywords": [
+        "밤",
+        "야경",
+        "나들이"
+      ]
+    },
+    {
+      "id": "memory-4e5a7f4f41b9",
+      "category": "water",
+      "title": "노을 지는 물가",
+      "itemIds": [
+        "4e5a7f4f41b9",
+        "5a6400c219c1",
+        "495b763bd771",
+        "5df0d6450179"
+      ],
+      "coverId": "5a6400c219c1",
+      "alt": "도시의 물가와 분홍빛 노을 앞에서 찍은 사진",
+      "keywords": [
+        "바다",
+        "물가",
+        "여행",
+        "노을",
+        "산책"
+      ]
+    },
+    {
+      "id": "memory-f00ca702c32d",
+      "category": "table",
+      "title": "마주 앉은 식탁",
+      "itemIds": [
+        "f00ca702c32d",
+        "0f919181d1e2",
+        "d88507e9f184"
+      ],
+      "coverId": "0f919181d1e2",
+      "alt": "식당에서 음식을 앞에 두고 찍은 사진",
+      "keywords": [
+        "식사",
+        "밥",
+        "음식"
+      ]
+    },
+    {
+      "id": "memory-3761056e6a44",
+      "category": "table",
+      "title": "창가 자리",
+      "itemIds": [
+        "3761056e6a44",
+        "d666623b29c3",
+        "f688374fa267"
+      ],
+      "coverId": "d666623b29c3",
+      "alt": "창가 식탁에 앉아 찍은 사진",
+      "keywords": [
+        "식사",
+        "식당",
+        "창가",
+        "디저트"
+      ]
+    },
+    {
+      "id": "memory-0e25b35d1008",
+      "category": "table",
+      "title": "밥 먹는 시간",
+      "itemIds": [
+        "0e25b35d1008"
+      ],
+      "coverId": "0e25b35d1008",
+      "alt": "식당 테이블에 앉아 있는 모습",
+      "keywords": [
+        "식사",
+        "밥",
+        "식당"
+      ]
+    },
+    {
+      "id": "memory-e6f58e0e8c66",
+      "category": "play",
+      "title": "볼링장에서",
+      "itemIds": [
+        "e6f58e0e8c66",
+        "be560521e4d8",
+        "52b88615bbf5"
+      ],
+      "coverId": "be560521e4d8",
+      "alt": "볼링 레인과 점수판을 뒤로 하고 함께 찍은 사진",
+      "keywords": [
+        "운동",
+        "볼링",
+        "놀거리"
+      ]
+    },
+    {
+      "id": "memory-66432131a602",
+      "category": "table",
+      "title": "함께 둘러앉아",
+      "itemIds": [
+        "66432131a602"
+      ],
+      "coverId": "66432131a602",
+      "alt": "여럿이 음식이 놓인 식탁에 둘러앉은 모습",
+      "keywords": [
+        "식사",
+        "밥",
+        "함께"
+      ]
+    },
+    {
+      "id": "memory-537c4f8dc9ec",
+      "category": "walk",
+      "title": "산책길에서",
+      "itemIds": [
+        "537c4f8dc9ec",
+        "e621a03c78cd"
+      ],
+      "coverId": "e621a03c78cd",
+      "alt": "나무와 산이 보이는 길에서 함께 찍은 사진",
+      "keywords": [
+        "산책",
+        "산",
+        "나들이",
+        "겨울"
+      ]
+    },
+    {
+      "id": "memory-d7b675bd07a5",
+      "category": "water",
+      "title": "폭포 앞에서",
+      "itemIds": [
+        "d7b675bd07a5",
+        "8f00d795766a"
+      ],
+      "coverId": "d7b675bd07a5",
+      "alt": "바위와 폭포 앞에서 함께 찍은 사진",
+      "keywords": [
+        "여행",
+        "폭포",
+        "물가",
+        "계곡"
+      ]
+    },
+    {
+      "id": "memory-e981fa4f46de",
+      "category": "play",
+      "title": "불빛 아래 장난",
+      "itemIds": [
+        "e981fa4f46de",
+        "77f40b35c825"
+      ],
+      "coverId": "77f40b35c825",
+      "alt": "알록달록한 조명 옆에서 함께 포즈를 취한 사진",
+      "keywords": [
+        "밤",
+        "나들이",
+        "장난"
+      ]
+    },
+    {
+      "id": "memory-3d49a0338b96",
+      "category": "walk",
+      "title": "겨울밤의 산책",
+      "itemIds": [
+        "3d49a0338b96"
+      ],
+      "coverId": "3d49a0338b96",
+      "alt": "패딩을 입고 밤에 함께 찍은 사진",
+      "keywords": [
+        "겨울",
+        "밤",
+        "산책"
+      ]
+    },
+    {
+      "id": "memory-8721ecdea976",
+      "category": "walk",
+      "title": "달이 뜬 저녁",
+      "itemIds": [
+        "8721ecdea976"
+      ],
+      "coverId": "8721ecdea976",
+      "alt": "달이 뜬 하늘 아래 밝은 벽 옆에 서 있는 모습",
+      "keywords": [
+        "달",
+        "저녁",
+        "산책",
+        "겨울"
+      ]
+    },
+    {
+      "id": "memory-ef8c1164e53c",
+      "category": "walk",
+      "title": "밤공원에서",
+      "itemIds": [
+        "ef8c1164e53c"
+      ],
+      "coverId": "ef8c1164e53c",
+      "alt": "가로등과 나무가 있는 밤공원에서 함께 찍은 사진",
+      "keywords": [
+        "겨울",
+        "밤",
+        "공원",
+        "산책"
+      ]
+    },
+    {
+      "id": "memory-898c3b676c8b",
+      "category": "everyday",
+      "title": "함께 앉은 날",
+      "itemIds": [
+        "898c3b676c8b"
+      ],
+      "coverId": "898c3b676c8b",
+      "alt": "밝은 실내에 나란히 앉아 함께 찍은 사진",
+      "keywords": [
+        "일상",
+        "실내",
+        "셀카"
+      ]
+    },
+    {
+      "id": "memory-983a3192fec5",
+      "category": "play",
+      "title": "표를 들고",
+      "itemIds": [
+        "983a3192fec5",
+        "8a775529163f"
+      ],
+      "coverId": "983a3192fec5",
+      "alt": "입장권을 들고 실내에서 함께 찍은 사진",
+      "keywords": [
+        "표",
+        "입장권",
+        "나들이"
+      ]
+    },
+    {
+      "id": "memory-58707def2df8",
+      "category": "play",
+      "title": "레이저 게임",
+      "itemIds": [
+        "58707def2df8",
+        "82dae4afb716"
+      ],
+      "coverId": "58707def2df8",
+      "alt": "보라색 조명 아래 게임 장비를 들고 찍은 사진",
+      "keywords": [
+        "레이저",
+        "게임",
+        "오락",
+        "놀거리"
+      ]
+    },
+    {
+      "id": "memory-6596b24cd7a6",
+      "category": "walk",
+      "title": "겨울 햇살",
+      "itemIds": [
+        "6596b24cd7a6"
+      ],
+      "coverId": "6596b24cd7a6",
+      "alt": "겨울 나무 사이로 햇빛이 들어오는 곳에서 함께 찍은 사진",
+      "keywords": [
+        "겨울",
+        "산책",
+        "햇살",
+        "나무"
+      ]
+    },
+    {
+      "id": "memory-d0670018f05b",
+      "category": "table",
+      "title": "카페에서",
+      "itemIds": [
+        "d0670018f05b",
+        "469a63a4f607"
+      ],
+      "coverId": "d0670018f05b",
+      "alt": "카페 테이블을 사이에 두고 함께 찍은 사진",
+      "keywords": [
+        "카페",
+        "커피",
+        "음료"
+      ]
+    },
+    {
+      "id": "memory-e236d8f1228f",
+      "category": "walk",
+      "title": "길 위에서",
+      "itemIds": [
+        "e236d8f1228f"
+      ],
+      "coverId": "e236d8f1228f",
+      "alt": "푸른 하늘 아래 야외에서 찍은 사진",
+      "keywords": [
+        "산책",
+        "길",
+        "봄"
+      ]
+    },
+    {
+      "id": "memory-d767e725a1af",
+      "category": "water",
+      "title": "함께 선 바닷가",
+      "itemIds": [
+        "d767e725a1af"
+      ],
+      "coverId": "d767e725a1af",
+      "alt": "여럿이 바다 앞에 서서 함께 찍은 사진",
+      "keywords": [
+        "바다",
+        "여행",
+        "해변",
+        "단체"
+      ]
+    },
+    {
+      "id": "memory-95cdef9a2383",
+      "category": "portrait",
+      "title": "꽃다발과 사진",
+      "itemIds": [
+        "95cdef9a2383",
+        "776d71304562",
+        "23d433462d58",
+        "649db2f49fe4",
+        "67864effe89a",
+        "ec7ae61bc966"
+      ],
+      "coverId": "23d433462d58",
+      "alt": "꽃다발을 들고 사진관에서 함께 남긴 사진",
+      "keywords": [
+        "사진관",
+        "꽃다발",
+        "거울",
+        "사진",
+        "촬영"
+      ]
+    },
+    {
+      "id": "memory-d008fa9dc488",
+      "category": "walk",
+      "title": "벚꽃 아래서",
+      "itemIds": [
+        "d008fa9dc488",
+        "a57c35dccebd"
+      ],
+      "coverId": "d008fa9dc488",
+      "alt": "만개한 벚꽃나무 아래에서 함께 찍은 사진",
+      "keywords": [
+        "봄",
+        "벚꽃",
+        "꽃",
+        "산책"
+      ]
+    },
+    {
+      "id": "memory-cf1f0171c392",
+      "category": "everyday",
+      "title": "책상 앞에서",
+      "itemIds": [
+        "cf1f0171c392"
+      ],
+      "coverId": "cf1f0171c392",
+      "alt": "서류가 놓인 책상 앞에서 브이하는 모습",
+      "keywords": [
+        "일상",
+        "책상",
+        "사무실"
+      ]
+    },
+    {
+      "id": "memory-16a9f9f6beb1",
+      "category": "water",
+      "title": "요트 위에서",
+      "itemIds": [
+        "16a9f9f6beb1",
+        "fcf3f2e6eca0",
+        "90cf73008772",
+        "e3b64f60cc7f",
+        "c9490cdcb2dd",
+        "2856111fbe78",
+        "c7c1a4989200"
+      ],
+      "coverId": "c9490cdcb2dd",
+      "alt": "구명조끼를 입거나 요트의 돛대 옆에 서 있는 모습",
+      "keywords": [
+        "바다",
+        "여행",
+        "요트",
+        "배"
+      ]
+    },
+    {
+      "id": "memory-0fd351868961",
+      "category": "table",
+      "title": "나무 테이블 앞에서",
+      "itemIds": [
+        "0fd351868961"
+      ],
+      "coverId": "0fd351868961",
+      "alt": "나무로 된 실내의 테이블 앞에 앉아 있는 모습",
+      "keywords": [
+        "식사",
+        "테이블",
+        "음료"
+      ]
+    },
+    {
+      "id": "memory-e0732d19960f",
+      "category": "walk",
+      "title": "다리 위에서",
+      "itemIds": [
+        "e0732d19960f"
+      ],
+      "coverId": "e0732d19960f",
+      "alt": "빨간 원피스를 입고 물가의 다리 위에 서 있는 모습",
+      "keywords": [
+        "여행",
+        "다리",
+        "산책",
+        "여름"
+      ]
+    },
+    {
+      "id": "memory-bd6d6f6e7868",
+      "category": "play",
+      "title": "관중석에서",
+      "itemIds": [
+        "bd6d6f6e7868"
+      ],
+      "coverId": "bd6d6f6e7868",
+      "alt": "경기장 관중석에 나란히 앉아 찍은 사진",
+      "keywords": [
+        "경기장",
+        "관람",
+        "응원",
+        "운동"
+      ]
+    },
+    {
+      "id": "memory-09eb0cabfaf4",
+      "category": "table",
+      "title": "함께 구운 고기",
+      "itemIds": [
+        "09eb0cabfaf4"
+      ],
+      "coverId": "09eb0cabfaf4",
+      "alt": "고기와 반찬이 놓인 식탁에서 함께 찍은 사진",
+      "keywords": [
+        "식사",
+        "고기",
+        "구이",
+        "밥"
+      ]
+    },
+    {
+      "id": "memory-6ebcf130f761",
+      "category": "table",
+      "title": "식탁 위의 브이",
+      "itemIds": [
+        "6ebcf130f761",
+        "c85bdd00f1b4"
+      ],
+      "coverId": "6ebcf130f761",
+      "alt": "음료와 그릇이 놓인 식탁에서 찍은 사진",
+      "keywords": [
+        "식사",
+        "식당",
+        "음료"
+      ]
+    },
+    {
+      "id": "memory-d4b67d5053d5",
+      "category": "table",
+      "title": "고기 굽는 시간",
+      "itemIds": [
+        "d4b67d5053d5"
+      ],
+      "coverId": "d4b67d5053d5",
+      "alt": "식당에서 고기를 굽는 모습",
+      "keywords": [
+        "식사",
+        "고기",
+        "구이",
+        "밥"
+      ]
+    },
+    {
+      "id": "memory-e2df8107705f",
+      "category": "everyday",
+      "title": "발표하던 날",
+      "itemIds": [
+        "e2df8107705f"
+      ],
+      "coverId": "e2df8107705f",
+      "alt": "여러 사람 앞에서 자료와 함께 발표하는 모습",
+      "keywords": [
+        "일상",
+        "발표",
+        "활동"
+      ]
+    },
+    {
+      "id": "memory-a0f3f5b7b4e0",
+      "category": "everyday",
+      "title": "같은 테이블에서",
+      "itemIds": [
+        "a0f3f5b7b4e0"
+      ],
+      "coverId": "a0f3f5b7b4e0",
+      "alt": "노트북이 놓인 테이블에 여럿이 앉아 찍은 사진",
+      "keywords": [
+        "일상",
+        "노트북",
+        "작업",
+        "함께"
+      ]
+    },
+    {
+      "id": "memory-a90d7f4f9401",
+      "category": "everyday",
+      "title": "복도에서 한 장",
+      "itemIds": [
+        "a90d7f4f9401"
+      ],
+      "coverId": "a90d7f4f9401",
+      "alt": "실내 복도에 서서 찍은 사진",
+      "keywords": [
+        "일상",
+        "복도"
+      ]
+    },
+    {
+      "id": "memory-e4b5f174b044",
+      "category": "water",
+      "title": "바위 절벽 앞에서",
+      "itemIds": [
+        "e4b5f174b044"
+      ],
+      "coverId": "e4b5f174b044",
+      "alt": "바위 절벽을 뒤로 하고 작은 태극기를 들고 찍은 사진",
+      "keywords": [
+        "여행",
+        "바다",
+        "절벽",
+        "배"
+      ]
+    },
+    {
+      "id": "memory-6e1b1ae73ce3",
+      "category": "everyday",
+      "title": "버스 옆자리",
+      "itemIds": [
+        "6e1b1ae73ce3"
+      ],
+      "coverId": "6e1b1ae73ce3",
+      "alt": "버스 좌석에 나란히 앉아 찍은 사진",
+      "keywords": [
+        "일상",
+        "버스",
+        "이동",
+        "여행"
+      ]
+    },
+    {
+      "id": "memory-52622cecbec1",
+      "category": "table",
+      "title": "산책길의 간식",
+      "itemIds": [
+        "52622cecbec1"
+      ],
+      "coverId": "52622cecbec1",
+      "alt": "나무 아래에서 간식을 들고 함께 찍은 사진",
+      "keywords": [
+        "간식",
+        "산책",
+        "가을"
+      ]
+    },
+    {
+      "id": "memory-143586dcf61f",
+      "category": "everyday",
+      "title": "일하는 모습",
+      "itemIds": [
+        "143586dcf61f"
+      ],
+      "coverId": "143586dcf61f",
+      "alt": "모니터와 서류가 있는 책상에서 일하는 모습",
+      "keywords": [
+        "일상",
+        "사무실",
+        "책상",
+        "일"
+      ]
+    },
+    {
+      "id": "memory-4a4dfa173568",
+      "category": "everyday",
+      "title": "함께한 자리",
+      "itemIds": [
+        "4a4dfa173568"
+      ],
+      "coverId": "4a4dfa173568",
+      "alt": "사람들이 모인 실내에서 브이하는 모습",
+      "keywords": [
+        "일상",
+        "모임"
+      ]
+    },
+    {
+      "id": "memory-a069e26cdbe2",
+      "category": "water",
+      "title": "창가에 앉아서",
+      "itemIds": [
+        "a069e26cdbe2"
+      ],
+      "coverId": "a069e26cdbe2",
+      "alt": "물가가 보이는 큰 창 옆에 앉아 있는 모습",
+      "keywords": [
+        "바다",
+        "물가",
+        "창가",
+        "여행"
+      ]
+    },
+    {
+      "id": "memory-fc717fab85ab",
+      "category": "everyday",
+      "title": "다 같이 한 장",
+      "itemIds": [
+        "fc717fab85ab",
+        "15dca727fcdf"
+      ],
+      "coverId": "15dca727fcdf",
+      "alt": "밤에 여럿이 모여 함께 찍은 사진",
+      "keywords": [
+        "일상",
+        "함께",
+        "단체",
+        "밤"
+      ]
+    },
+    {
+      "id": "memory-0778bbb8f7a6",
+      "category": "everyday",
+      "title": "상을 들고, 함께",
+      "itemIds": [
+        "0778bbb8f7a6",
+        "25ff614faa27",
+        "728089007816"
+      ],
+      "coverId": "728089007816",
+      "alt": "최우수상 상패를 들고 여럿이 함께 찍은 사진",
+      "keywords": [
+        "최우수상",
+        "수상",
+        "함께",
+        "단체"
+      ]
+    },
+    {
+      "id": "memory-0f52c510fbaa",
+      "category": "table",
+      "title": "함께하는 식사",
+      "itemIds": [
+        "0f52c510fbaa"
+      ],
+      "coverId": "0f52c510fbaa",
+      "alt": "음식이 놓인 긴 식탁에 둘러앉은 모습",
+      "keywords": [
+        "식사",
+        "함께",
+        "밥"
+      ]
+    },
+    {
+      "id": "memory-126267302251",
+      "category": "play",
+      "title": "노을 아래 응원",
+      "itemIds": [
+        "126267302251",
+        "31ad92e4cb31",
+        "70036df0694a"
+      ],
+      "coverId": "126267302251",
+      "alt": "노을 진 경기장에서 초록 응원봉을 들고 함께 찍은 사진",
+      "keywords": [
+        "응원",
+        "경기장",
+        "노을",
+        "함께"
+      ]
+    },
+    {
+      "id": "memory-1d0d67ec03dd",
+      "category": "portrait",
+      "title": "사진관에서 웃다가",
+      "itemIds": [
+        "1d0d67ec03dd",
+        "104c94f95d69"
+      ],
+      "coverId": "1d0d67ec03dd",
+      "alt": "밝은 옷을 입고 여러 표정을 남긴 사진관의 모습",
+      "keywords": [
+        "네컷",
+        "사진관",
+        "선글라스",
+        "영상"
+      ]
+    },
+    {
+      "id": "memory-40e842a822dd",
+      "category": "table",
+      "title": "카페의 한 테이블",
+      "itemIds": [
+        "40e842a822dd"
+      ],
+      "coverId": "40e842a822dd",
+      "alt": "여럿이 음료가 놓인 카페 테이블에 둘러앉은 모습",
+      "keywords": [
+        "카페",
+        "음료",
+        "함께"
+      ]
+    },
+    {
+      "id": "memory-4e021da77df8",
+      "category": "portrait",
+      "title": "머리띠와 네컷",
+      "itemIds": [
+        "4e021da77df8",
+        "811bc7edc7f7"
+      ],
+      "coverId": "4e021da77df8",
+      "alt": "머리띠와 선글라스로 장난치는 네컷사진",
+      "keywords": [
+        "네컷",
+        "사진관",
+        "머리띠",
+        "선글라스",
+        "영상"
+      ]
+    },
+    {
+      "id": "memory-a30d15408f19",
+      "category": "table",
+      "title": "둘이서 고기",
+      "itemIds": [
+        "a30d15408f19"
+      ],
+      "coverId": "a30d15408f19",
+      "alt": "고기와 반찬이 놓인 식탁에서 함께 브이하는 모습",
+      "keywords": [
+        "식사",
+        "고기",
+        "밥"
+      ]
+    },
+    {
+      "id": "memory-a463c8a63ae2",
+      "category": "portrait",
+      "title": "나란히 남긴 사진",
+      "itemIds": [
+        "a463c8a63ae2"
+      ],
+      "coverId": "a463c8a63ae2",
+      "alt": "밝은 배경 앞에서 나란히 포즈를 취한 사진",
+      "keywords": [
+        "사진관",
+        "포즈",
+        "셀카"
+      ]
+    },
+    {
+      "id": "memory-db79ef7da850",
+      "category": "play",
+      "title": "그림 앞에서",
+      "itemIds": [
+        "db79ef7da850"
+      ],
+      "coverId": "db79ef7da850",
+      "alt": "액자에 담긴 그림 앞에서 함께 찍은 사진",
+      "keywords": [
+        "그림",
+        "전시",
+        "나들이"
+      ]
+    },
+    {
+      "id": "memory-e2126d8fcd0c",
+      "category": "portrait",
+      "title": "장난스러운 네컷",
+      "itemIds": [
+        "e2126d8fcd0c",
+        "3448ded2e131"
+      ],
+      "coverId": "e2126d8fcd0c",
+      "alt": "초록 옷과 검은 옷을 입고 여러 표정을 남긴 네컷사진",
+      "keywords": [
+        "네컷",
+        "사진관",
+        "포즈",
+        "영상"
+      ]
+    },
+    {
+      "id": "memory-ee0124a96e2a",
+      "category": "table",
+      "title": "풍성한 식탁",
+      "itemIds": [
+        "ee0124a96e2a"
+      ],
+      "coverId": "ee0124a96e2a",
+      "alt": "여러 접시가 놓인 식탁에 여럿이 둘러앉은 모습",
+      "keywords": [
+        "식사",
+        "음식",
+        "함께"
+      ]
+    },
+    {
+      "id": "memory-6119f8dcd477",
+      "category": "portrait",
+      "title": "움직이는 네컷",
+      "itemIds": [
+        "6119f8dcd477"
+      ],
+      "coverId": "6119f8dcd477",
+      "alt": "빨간 니트를 입고 함께 포즈를 바꾸는 네컷 영상",
+      "keywords": [
+        "네컷",
+        "사진관",
+        "빨간",
+        "니트",
+        "영상"
+      ]
+    },
+    {
+      "id": "memory-8550d42e79b4",
+      "category": "table",
+      "title": "창가의 짧은 영상",
+      "itemIds": [
+        "8550d42e79b4"
+      ],
+      "coverId": "8550d42e79b4",
+      "alt": "창가 식탁에서 휴대폰을 보며 이야기하는 모습",
+      "keywords": [
+        "식사",
+        "식당",
+        "창가",
+        "영상"
+      ]
+    },
+    {
+      "id": "memory-983ec2cdfec7",
+      "category": "water",
+      "title": "돛대 옆에서",
+      "itemIds": [
+        "983ec2cdfec7"
+      ],
+      "coverId": "983ec2cdfec7",
+      "alt": "요트 앞쪽에서 팔을 펼치고 있는 모습",
+      "keywords": [
+        "바다",
+        "여행",
+        "요트",
+        "배",
+        "영상"
+      ]
+    },
+    {
+      "id": "memory-ac8ceceb749c",
+      "category": "walk",
+      "title": "밤에 남긴 표정",
+      "itemIds": [
+        "ac8ceceb749c"
+      ],
+      "coverId": "ac8ceceb749c",
+      "alt": "어두운 야외에서 함께 표정을 바꾸는 모습",
+      "keywords": [
+        "밤",
+        "산책",
+        "장난",
+        "영상"
+      ]
+    },
+    {
+      "id": "memory-bd4d5341227d",
+      "category": "water",
+      "title": "절벽 아래 선착장",
+      "itemIds": [
+        "bd4d5341227d"
+      ],
+      "coverId": "bd4d5341227d",
+      "alt": "바위 절벽 아래에서 함께 찍다가 선착장과 배를 비추는 영상",
+      "keywords": [
+        "바다",
+        "여행",
+        "절벽",
+        "선착장",
+        "배",
+        "영상"
+      ]
+    },
+    {
+      "id": "memory-d04c1d638c7b",
+      "category": "portrait",
+      "title": "카메라 앞에서",
+      "itemIds": [
+        "d04c1d638c7b"
+      ],
+      "coverId": "d04c1d638c7b",
+      "alt": "밝은 배경 앞에서 함께 포즈를 바꾸는 영상",
+      "keywords": [
+        "사진관",
+        "포즈",
+        "촬영",
+        "영상"
+      ]
+    }
+  ]
+}

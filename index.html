@@ -10,8 +10,8 @@
     <title>우리 사진첩</title>
     <link rel="icon" type="image/svg+xml" href="assets/album-mark.svg" />
     <link rel="preload" href="assets/fonts/MaruBuri-Regular.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="stylesheet" href="styles.css?v=album-1" />
-    <script type="module" src="app.js?v=album-1"></script>
+    <link rel="stylesheet" href="styles.css?v=album-2" />
+    <script type="module" src="app.js?v=album-2"></script>
   </head>
   <body>
     <a class="skip-link" href="#album">사진첩으로 건너뛰기</a>
@@ -20,7 +20,7 @@
         <svg class="album-mark" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect x="4.5" y="3.5" width="19" height="22" rx="1"/><path d="M9 4v21M2 9h5M2 15h5M2 21h5"/><rect x="12.5" y="9" width="7" height="9" rx=".4"/></svg>
         우리 사진첩
       </a>
-      <nav aria-label="주요 메뉴"><a href="#album">사진첩</a><a href="#collected">모아둔 사진</a><a href="#films">영상</a></nav>
+      <nav aria-label="주요 메뉴"><a href="#themes">사진첩</a><a href="#album">함께한 날들</a><a href="#films">영상</a></nav>
     </header>
     <main>
       <section class="hero page-width" aria-labelledby="cover-title">
@@ -28,7 +28,7 @@
           <p class="cover-years">2024 — 2026</p>
           <h1 id="cover-title">우리의<br />사진첩</h1>
           <p class="cover-range">2024. 04 — 2026. 05</p>
-          <a class="text-link cover-link" href="#album">한 장씩 넘겨보기 <span aria-hidden="true">↘</span></a>
+          <a class="text-link cover-link" href="#themes">사진첩 펼쳐보기 <span aria-hidden="true">↘</span></a>
         </div>
         <div class="hero-photos">
           <a class="cover-photo main-photo" href="assets/album/photos/eafc9b315fb5.webp" data-memory="eafc9b315fb5" aria-label="2024년 5월 18일, 바다 위에서 함께 찍은 사진 크게 보기">
@@ -42,22 +42,36 @@
         </div>
         <div class="cover-bottom" aria-hidden="true"><span>사진 · 일상 · 우리</span><span>↓</span></div>
       </section>
-      <section id="album" class="album-section page-width" aria-labelledby="album-title">
-        <div class="section-heading"><div><span class="section-index" aria-hidden="true">01</span><h2 id="album-title">함께한 날들</h2></div><p class="section-note">오래된 사진부터, 차례로</p></div>
-        <div class="album-toolbar">
-          <nav class="year-tabs" aria-label="사진 연도 선택">
-            <button type="button" data-year="all" aria-pressed="true">전체</button>
-            <button type="button" data-year="2024" aria-pressed="false">2024</button>
-            <button type="button" data-year="2025" aria-pressed="false">2025</button>
-            <button type="button" data-year="2026" aria-pressed="false">2026</button>
-          </nav>
-          <span id="album-count" class="album-count" aria-live="polite"></span>
-        </div>
-        <div id="timeline" class="timeline" aria-busy="true"><p class="load-message" role="status">사진을 펼치고 있어요.</p></div>
+      <section id="themes" class="themes-section page-width" aria-labelledby="themes-title">
+        <div class="section-heading"><div><span class="section-index" aria-hidden="true">01</span><h2 id="themes-title">꺼내 보는 사진첩</h2></div></div>
+        <div id="theme-grid" class="theme-grid"></div>
       </section>
-      <section id="collected" class="collected-section" aria-labelledby="collected-title">
+      <section id="album" class="album-section page-width" aria-labelledby="album-title">
+        <div class="section-heading"><div><span class="section-index" aria-hidden="true">02</span><h2 id="album-title" tabindex="-1">함께한 날들</h2></div><p class="section-note">오래된 날부터, 차례로</p></div>
+        <div class="album-toolbar">
+          <nav id="topic-tabs" class="topic-tabs" aria-label="추억 주제 선택"></nav>
+          <div class="archive-controls">
+            <div class="view-tabs" role="group" aria-label="사진첩 보기 방식">
+              <button type="button" data-view="stories" aria-pressed="true">추억 묶음</button>
+              <button type="button" data-view="photos" aria-pressed="false">사진 전체</button>
+            </div>
+            <div class="archive-tools">
+              <label class="sr-only" for="year-filter">기록 연도</label>
+              <select id="year-filter"><option value="all">모든 해</option><option value="2024">2024년</option><option value="2025">2025년</option><option value="2026">2026년</option><option value="undated">날짜 없이 모아둔 기록</option></select>
+              <label class="archive-search"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><span class="sr-only">추억 검색</span><input id="memory-search" type="search" maxlength="60" placeholder="바다, 벚꽃, 커피" autocomplete="off" /></label>
+            </div>
+          </div>
+        </div>
+        <div class="archive-summary"><span id="album-count" class="album-count" aria-live="polite"></span><button type="button" id="reset-filters" hidden>선택 지우기 <span aria-hidden="true">×</span></button></div>
+        <div id="archive-message" aria-live="polite"><p class="load-message">사진을 펼치고 있어요.</p></div>
+        <div id="story-grid" class="story-grid" aria-busy="true"></div>
+        <div class="load-more-wrap"><button type="button" id="load-more" class="expand-button" aria-controls="story-grid" hidden>기록 더 보기</button></div>
+        <div id="timeline" class="timeline" hidden></div>
+        <div id="empty-state" class="empty-state" hidden><p>이 조건에 맞는 기록이 없어요.</p><button type="button" id="empty-reset" class="text-link">전체 기록 보기 <span aria-hidden="true">↗</span></button></div>
+      </section>
+      <section id="collected" class="collected-section" aria-labelledby="collected-title" hidden>
         <div class="page-width">
-          <div class="section-heading"><div><span class="section-index" aria-hidden="true">02</span><h2 id="collected-title">모아둔 사진</h2></div><span id="collected-count" class="section-note"></span></div>
+          <div class="section-heading"><div><h2 id="collected-title">모아둔 사진</h2></div><span id="collected-count" class="section-note"></span></div>
           <div id="collected-grid" class="collected-grid"></div>
         </div>
       </section>
@@ -77,6 +91,7 @@
           <button type="button" id="viewer-next" class="icon-button viewer-arrow next" aria-label="다음 사진"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m10 5 7 7-7 7"/></svg></button>
         </div>
         <div class="viewer-caption"><span id="viewer-position" aria-live="polite"></span><a id="viewer-original" target="_blank" rel="noopener">크게 보기 <span aria-hidden="true">↗</span></a></div>
+        <nav class="viewer-journey" aria-label="다른 추억으로 이동"><button type="button" id="previous-story">이전 추억</button><button type="button" id="next-story">다음 추억</button></nav>
         <div id="viewer-strip" class="viewer-strip" aria-label="이 묶음의 사진"></div>
       </div>
     </dialog>

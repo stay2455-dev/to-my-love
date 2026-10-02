@@ -123,6 +123,9 @@ def main():
             item['date'] = item['date'][:10]
     dates = [x['date'] for x in output if x['date']]
     data = {'title': '우리 사진첩', 'range': [min(dates), max(dates)], 'items': output}
+    if (ROOT / 'data/curation.json').exists():
+        from curate_album import enrich
+        data = enrich(data, json.loads((ROOT / 'data/curation.json').read_text(encoding='utf-8')))
     (ROOT / 'data/memories.json').write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     with (PLAN / '촬영일-분류표.csv').open('w', newline='', encoding='utf-8-sig') as f:
         writer = csv.writer(f)

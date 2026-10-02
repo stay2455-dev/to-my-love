@@ -5,8 +5,11 @@
 
 주소: https://stay2455-dev.github.io/to-my-love/
 
-함께한 사진과 영상을 모은 정적 사진첩입니다. 연도 선택, 월별 사진 펼치기,
-전체 비율 사진 보기, 키보드·터치 탐색, 수동 영상 재생을 지원합니다.
+함께한 사진 192장과 영상 9편을 94개의 추억으로 모은 정적 사진첩입니다.
+바다와 물가, 산책과 계절, 밥과 커피, 놀러 간 날, 네컷과 사진관,
+소소한 일상의 여섯 사진첩을 주제·연도·검색으로 함께 살펴볼 수 있습니다.
+추억 묶음/사진 전체 전환, 월별 사진 펼치기, 전체 비율 사진 보기,
+이전·다음 추억 탐색, 키보드·터치 탐색, 수동 영상 재생을 지원합니다.
 
 미리보기에는 HTTP 서버가 필요합니다. 예: `python -m http.server 4173`.
 `file://`로 열면 브라우저 보안 정책 때문에 사진 목록을 읽을 수 없습니다.
@@ -14,19 +17,29 @@
 ## 자료
 
 - `data/memories.json`: 날짜순 사진·영상 목록. 날짜가 없으면 추측하지 않습니다.
+- `data/curation.json`: 실제 장면을 확인한 주제·추억 묶음·대표 사진·짧은 제목.
 - `assets/album/`: 공개용 WebP 이미지·미리보기와 H.264/AAC 영상.
 - `scripts/catalog_media.py`: 로컬 `사진/` 원본에서 촬영 날짜와 중복을 확인합니다.
 - `scripts/date-overrides.json`: 사진 자체에 인쇄된 날짜를 직접 확인한 예외 기록.
 - `scripts/prepare_media.py`: 원본을 변경하지 않고 공개 사본과 목록을 만듭니다.
+- `scripts/curate_album.py`: 모든 사진·영상이 정확히 한 추억에 속하는지 확인하고
+  분류를 공개 목록에 반영합니다. 로컬 `planning/추억-분류표.csv`도 생성합니다.
 
 사진 원본과 내부 정리 자료는 Git에서 제외합니다. 재생성에는 Python, Pillow,
 imageio-ffmpeg가 필요합니다. `planning/runtime` 설치 또는 일반 Python 환경을 사용할 수 있습니다.
 순서: `python scripts/catalog_media.py`, `python scripts/prepare_media.py`.
+기존 사진의 주제·묶음·제목만 수정할 때는 `data/curation.json`을 편집한 뒤
+`python scripts/curate_album.py`를 실행하면 됩니다.
+사진을 추가할 때는 새 식별자도 직접 확인하여 분류해야 합니다.
+분류하지 않은 자료가 있으면 재생성을 중단하며, 날짜 있는 자료와 없는 자료를
+한 추억에 섞어 촬영일을 추정하지 않습니다.
 
 ## 검사
 
 `npm install --prefix planning/test-runtime jsdom@26.1.0` 후
-`node --test scripts/test_album.cjs`로 목록·분류·탐색 동작을 검사합니다.
+`node --test scripts/test_album.cjs`로 목록·분류·검색·탐색 동작 등 13개 항목을 검사합니다.
+`python scripts/verify_media.py`는 원본 무변경, 날짜 근거, 공개 사본의
+위치 메타데이터 제거와 이미지·영상 파일 무결성을 확인합니다.
 DOM 검사는 실제 화면 배치나 기기별 재생 검사를 대체하지 않습니다.
 
 ## 글꼴
