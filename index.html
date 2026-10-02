@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7f4ed" />
+    <meta name="description" content="사랑하는 너에게, 천천히 써 내려가는 우리의 이야기." />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>To my love — 너에게 보내는 작은 마음</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --paper: #f7f4ed;
+        --ink: #31473f;
+        --muted: #6b756d;
+        --line: #d9dcd1;
+        --rose: #a74e50;
+      }
+
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-width: 280px;
+        min-height: 100svh;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      .page {
+        width: min(1080px, calc(100% - 64px));
+        min-height: 100svh;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 31px 0;
+        border-bottom: 1px solid var(--line);
+      }
+      .wordmark {
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 24px;
+        font-style: italic;
+        letter-spacing: -1px;
+      }
+      .edition {
+        color: var(--muted);
+        font-size: 10px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+      main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 64px 0 70px;
+      }
+      .eyebrow {
+        margin: 0 0 24px;
+        color: var(--rose);
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 3px;
+      }
+      h1 {
+        margin: 0;
+        font-family: "Batang", "AppleMyungjo", "Noto Serif CJK KR", serif;
+        font-size: clamp(30px, 4.3vw, 49px);
+        font-weight: 400;
+        line-height: 1.65;
+        letter-spacing: -2px;
+        word-break: keep-all;
+      }
+      .intro {
+        margin: 19px 0 37px;
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.9;
+        word-break: keep-all;
+      }
+      .letter {
+        width: min(100%, 392px);
+        background: #fffdf8;
+        border: 1px solid #e3dfd4;
+        border-radius: 3px;
+        box-shadow: 0 12px 30px #31473f08, 3px 4px 0 -1px #f1eee5, 3px 4px 0 0 #e3dfd4;
+        text-align: left;
+        transition: box-shadow 180ms ease;
+      }
+      .letter:hover { box-shadow: 0 14px 34px #31473f12, 3px 4px 0 -1px #f1eee5, 3px 4px 0 0 #e3dfd4; }
+      summary {
+        display: block;
+        list-style: none;
+        padding: 29px 30px 23px;
+        cursor: pointer;
+        border-radius: 3px;
+      }
+      summary::-webkit-details-marker { display: none; }
+      summary:focus-visible { outline: 2px solid var(--rose); outline-offset: 5px; }
+      .envelope-top { display: flex; align-items: center; justify-content: space-between; }
+      .recipient { font-family: Georgia, serif; font-size: 27px; font-style: italic; }
+      .stamp {
+        width: 43px;
+        height: 50px;
+        display: grid;
+        place-items: center;
+        color: var(--rose);
+        background: #f5e8e2;
+        border: 1px dashed #bd9290;
+        outline: 4px solid #f5e8e2;
+      }
+      .stamp svg { width: 20px; height: 20px; }
+      .letter-caption { display: block; margin-top: 18px; color: var(--muted); font-size: 12px; }
+      .letter-action {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 29px;
+        padding-top: 17px;
+        border-top: 1px solid #e8e4db;
+        font-size: 12px;
+      }
+      .arrow { font-size: 20px; line-height: 1; transition: transform 180ms ease; }
+      details[open] .arrow { transform: rotate(90deg); }
+      .when-open { display: none; }
+      details[open] .when-open { display: inline; }
+      details[open] .when-closed { display: none; }
+      .note { padding: 0 30px 27px; }
+      .note p { margin: 0; font-size: 13px; line-height: 2.1; word-break: keep-all; }
+      .note .signature { margin-top: 15px; color: var(--rose); font-family: Georgia, serif; font-style: italic; }
+      .waiting { display: flex; align-items: center; gap: 7px; margin: 25px 0 0; font-size: 10px; color: var(--muted); }
+      .dot { width: 4px; height: 4px; border-radius: 50%; background: #8c9b86; }
+      footer {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 22px 0 26px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 10px;
+      }
+      footer span:last-child { font-family: Georgia, serif; font-style: italic; font-size: 12px; }
+      @media (max-width: 540px) {
+        .page { width: calc(100% - 40px); }
+        header { padding: 24px 0; }
+        .wordmark { font-size: 23px; }
+        .edition { font-size: 8px; letter-spacing: 1.4px; }
+        main { padding: 46px 0 50px; }
+        .eyebrow { font-size: 9px; margin-bottom: 23px; }
+        h1 { font-size: clamp(27px, 7.8vw, 36px); letter-spacing: -1.3px; }
+        .intro { font-size: 12px; margin-bottom: 30px; }
+        summary { padding: 26px 24px 21px; }
+        .note { padding: 0 24px 25px; }
+        footer { font-size: 9px; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after { transition: none !important; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <span class="wordmark" lang="en">to my love.</span>
+        <span class="edition" lang="en">A little place for us</span>
+      </header>
+      <main>
+        <p class="eyebrow" lang="en">EVERY STORY STARTS WITH YOU</p>
+        <h1>너에게 전하고 싶은<br />이야기가 있어.</h1>
+        <p class="intro">함께한 순간과 아직 전하지 못한 마음을<br />이곳에 하나씩 담아보려고 해.</p>
+        <details class="letter">
+          <summary>
+            <span class="envelope-top">
+              <span class="recipient" lang="en">Dear, you</span>
+              <span class="stamp" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-9-5.4-9-12a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 6.6-9 12-9 12Z" /></svg>
+              </span>
+            </span>
+            <span class="letter-caption">오직 너를 위한 작은 편지</span>
+            <span class="letter-action">
+              <span class="when-closed">편지 열어보기</span>
+              <span class="when-open">편지 접어두기</span>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </span>
+          </summary>
+          <div class="note">
+            <p>조금만 기다려줘.<br />우리의 이야기를 천천히 준비하고 있어.<br />이 작은 공간이 너에게 따뜻한 선물이 되기를.</p>
+            <p class="signature" lang="en">With love, always.</p>
+          </div>
+        </details>
+        <p class="waiting"><span class="dot" aria-hidden="true"></span>우리의 이야기를 준비하고 있어요</p>
+      </main>
+      <footer>
+        <span>사랑하는 사람에게 보내는 작은 마음</span>
+        <span lang="en">Made with love.</span>
+      </footer>
+    </div>
+  </body>
+</html>
