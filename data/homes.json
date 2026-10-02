@@ -1,0 +1,400 @@
+{
+  "schemaVersion": 1,
+  "importedOn": "2026-10-02",
+  "sourceType": "user-research",
+  "title": "함께 살아보고 싶은 동네",
+  "intro": "첫 번째로 찾아본 곳, 울산. 아직 정한 것은 없고, 어떤 일상을 함께 보내고 싶은지 이야기하며 모아둔 후보들이에요.",
+  "budgetLabel": "조사 기준 · 매매 3억 원 이내",
+  "notice": "2026. 10. 02에 모아둔 기록이에요. 금액은 당시 호가·실거래·시세이며 현재 매물을 뜻하지 않아요. 지금 볼 수 있는 집과 가격은 네이버부동산에서 다시 확인해요.",
+  "linkNotice": "2026년 10월 2일 브라우저에서 모든 네이버 링크가 해당 단지명으로 연결되는 것을 확인했습니다. 연결 확인은 매물과 가격의 재검증을 뜻하지 않습니다.",
+  "homes": [
+    {
+      "id": "seonam-acriti",
+      "name": "선암아크리티",
+      "areaLabel": "울산 남구 · 선암호수공원 생활권",
+      "setting": "호수 가까이",
+      "year": 2018,
+      "households": 90,
+      "summary": "선암호수공원으로 이어지는 산책 동선과 소규모 단지의 생활을 함께 살펴볼 후보예요.",
+      "priceSummary": "전용 58.07㎡ · 조사자료의 호가 2억 8,500만 원",
+      "tags": [
+        "호수",
+        "소규모 단지"
+      ],
+      "prices": [
+        {
+          "label": "매물 호가",
+          "area": "전용 58.07㎡",
+          "amount": "2억 8,500만 원",
+          "date": "확인일 미기재",
+          "sourceUrl": "https://realty.daangn.com/articles/4458793",
+          "note": "남동향·즉시입주 가능으로 소개된 당시 매물입니다. 현재 상태는 재확인이 필요해요."
+        },
+        {
+          "label": "KB 일반가 · 원문 인용",
+          "area": "전용 58.07㎡",
+          "amount": "2억 6,000만 원",
+          "date": "기준일 미기재",
+          "sourceUrl": "https://realty.daangn.com/articles/4458793",
+          "note": "원문은 KB 일반가를 인용했으나 KB 직접 링크는 첨부하지 않았습니다."
+        },
+        {
+          "label": "실거래 · 원문 인용",
+          "area": "전용 58.07㎡",
+          "amount": "2억 8,500만 원",
+          "date": "2026년 8월",
+          "sourceUrl": "https://realty.daangn.com/articles/4458793"
+        }
+      ],
+      "lookFor": [
+        "집에서 공원까지 실제 걸리는 시간과 걷기 편한 길",
+        "저녁 시간 버스정류장·공동현관까지의 동선",
+        "동·층·향에 따른 실제 창밖 풍경과 관리비"
+      ],
+      "naverUrl": "https://m.land.naver.com/search/result/%EC%84%A0%EC%95%94%EC%95%84%ED%81%AC%EB%A6%AC%ED%8B%B0",
+      "naverLinkLabel": "네이버 부동산에서 단지명 검색",
+      "naverLinkStatus": {
+        "verified": true,
+        "checkedOn": "2026-10-02",
+        "kind": "search",
+        "note": "브라우저에서 연결된 네이버부동산 화면의 단지명을 확인했습니다. 현재 매물과 가격은 별도로 재검증하지 않았습니다."
+      },
+      "sources": [
+        {
+          "label": "당근부동산 · 원문 가격 출처",
+          "url": "https://realty.daangn.com/articles/4458793"
+        },
+        {
+          "label": "아파트진 · 공원 접근 자료",
+          "url": "https://aptgin.com/home/popup/pp_danji/apt/am50075em0"
+        }
+      ],
+      "watchOnly": false
+    },
+    {
+      "id": "e-pyeon-onyang",
+      "name": "e편한세상 울산온양",
+      "areaLabel": "울산 울주군 · 온양 생활권",
+      "setting": "강과 산 주변",
+      "year": 2018,
+      "households": 970,
+      "summary": "회야강과 주변 산을 가까이 두는 생활을 떠올리며, 장보기와 출퇴근 동선도 함께 확인할 후보예요.",
+      "priceSummary": "전용 59.99~75㎡ · 조사자료의 실거래 2억 3,500~2억 7,500만 원",
+      "tags": [
+        "강",
+        "산",
+        "대단지"
+      ],
+      "prices": [
+        {
+          "label": "실거래 · 원문 인용",
+          "area": "전용 59.99㎡",
+          "amount": "2억 3,500만 원 / 2억 3,500만 원 / 2억 4,600만 원",
+          "date": "9월 · 연도 미기재",
+          "sourceUrl": "https://dongnepick.co.kr/property/cmsmhnhm845f05ar675c6xoul/e%ED%8E%B8%ED%95%9C%EC%84%B8%EC%83%81%EC%9A%B8%EC%82%B0%EC%98%A8%EC%96%91"
+        },
+        {
+          "label": "실거래 · 원문 인용",
+          "area": "전용 75㎡",
+          "amount": "2억 7,500만 원",
+          "date": "9월 21일 · 연도 미기재",
+          "sourceUrl": "https://dongnepick.co.kr/property/cmsmhnhm845f05ar675c6xoul/e%ED%8E%B8%ED%95%9C%EC%84%B8%EC%83%81%EC%9A%B8%EC%82%B0%EC%98%A8%EC%96%91"
+        }
+      ],
+      "lookFor": [
+        "회야강 산책길과 집 사이 실제 보행 동선",
+        "망양역·버스·장보기 동선과 이용 시간",
+        "직장이 정해진 뒤 출퇴근 시간대의 이동 거리"
+      ],
+      "naverUrl": "https://m.land.naver.com/search/result/e%ED%8E%B8%ED%95%9C%EC%84%B8%EC%83%81%EC%9A%B8%EC%82%B0%EC%98%A8%EC%96%91",
+      "naverLinkLabel": "네이버 부동산에서 단지명 검색",
+      "naverLinkStatus": {
+        "verified": true,
+        "checkedOn": "2026-10-02",
+        "kind": "search",
+        "note": "브라우저에서 연결된 네이버부동산 화면의 단지명을 확인했습니다. 현재 매물과 가격은 별도로 재검증하지 않았습니다."
+      },
+      "sources": [
+        {
+          "label": "동네픽 · 원문 실거래 출처",
+          "url": "https://dongnepick.co.kr/property/cmsmhnhm845f05ar675c6xoul/e%ED%8E%B8%ED%95%9C%EC%84%B8%EC%83%81%EC%9A%B8%EC%82%B0%EC%98%A8%EC%96%91"
+        },
+        {
+          "label": "네이버 부동산 · 과거 매물 설명",
+          "url": "https://fin.land.naver.com/articles/2530044393"
+        }
+      ],
+      "watchOnly": false
+    },
+    {
+      "id": "blue-ma-city-prugio-1",
+      "name": "울산블루마시티푸르지오 1차",
+      "areaLabel": "울산 북구 · 강동 바다 생활권",
+      "setting": "바다와 산 주변",
+      "year": 2014,
+      "households": 738,
+      "summary": "바다와 산이 있는 생활권에서 넓은 집을 살펴볼 후보예요. 자동차 이용 여부와 출퇴근 방향을 함께 생각해보면 좋아요.",
+      "priceSummary": "전용 84.9㎡ · 조사자료의 실거래 2억 5,800만 원",
+      "tags": [
+        "바다",
+        "산"
+      ],
+      "prices": [
+        {
+          "label": "KB 일반가 · 원문 인용",
+          "area": "전용 84.93㎡",
+          "amount": "2억 7,000만 원",
+          "date": "기준일 미기재",
+          "sourceUrl": "https://kbland.kr/se/c/25634"
+        },
+        {
+          "label": "실거래 · 원문 인용",
+          "area": "전용 84.9㎡",
+          "amount": "2억 5,800만 원",
+          "date": "거래일 미기재",
+          "sourceUrl": "https://kbland.kr/se/c/25634",
+          "note": "원문에 16층 거래로 기재됐습니다."
+        },
+        {
+          "label": "실거래 · 원문 인용",
+          "area": "전용 59.98㎡",
+          "amount": "1억 8,700만 원",
+          "date": "8월 · 연도 미기재",
+          "sourceUrl": "https://kbland.kr/se/c/25634",
+          "note": "원문에 고층 거래로 기재됐습니다."
+        },
+        {
+          "label": "실거래 · 원문 인용",
+          "area": "전용 59.98㎡",
+          "amount": "2억 2,650만 원",
+          "date": "거래일 미기재",
+          "sourceUrl": "https://kbland.kr/se/c/25634",
+          "note": "원문에 다른 고층 거래로 기재됐습니다."
+        }
+      ],
+      "lookFor": [
+        "집에서 바다로 걷는 길과 실제 조망",
+        "자동차 없이 장보기·병원·대중교통 이용하기",
+        "남구·울주 또는 북구·동구 방향 출퇴근 시간"
+      ],
+      "naverUrl": "https://fin.land.naver.com/complexes/103969",
+      "naverLinkLabel": "네이버 부동산 단지 보기",
+      "naverLinkStatus": {
+        "verified": true,
+        "checkedOn": "2026-10-02",
+        "kind": "complex",
+        "note": "브라우저에서 연결된 네이버부동산 화면의 단지명을 확인했습니다. 현재 매물과 가격은 별도로 재검증하지 않았습니다."
+      },
+      "sources": [
+        {
+          "label": "KB부동산 · 원문 시세·실거래 출처",
+          "url": "https://kbland.kr/se/c/25634"
+        },
+        {
+          "label": "네이버 부동산 · 원문 단지 정보",
+          "url": "https://fin.land.naver.com/complexes/103969?tab=complex-info"
+        }
+      ],
+      "watchOnly": false
+    },
+    {
+      "id": "munsu-desian-2",
+      "name": "문수데시앙2단지",
+      "areaLabel": "울산 울주군 청량읍 율리",
+      "setting": "산자락 주거지",
+      "year": 2015,
+      "households": 250,
+      "summary": "문수산 쪽 주거 환경과 저층 집의 생활을 살펴볼 후보예요. 과거 공공 공급가격과 일반 매물 호가는 구분해서 모아뒀어요.",
+      "priceSummary": "전용 59㎡ · 조사자료의 저층 호가 2억 7,500~2억 7,900만 원",
+      "tags": [
+        "산",
+        "저층 후보"
+      ],
+      "prices": [
+        {
+          "label": "매물 호가 · 저층",
+          "area": "전용 59㎡",
+          "amount": "2억 7,500만 원 / 2억 7,900만 원",
+          "date": "확인일 미기재",
+          "sourceUrl": "https://realty.daangn.com/complexes/10525494"
+        },
+        {
+          "label": "매물 호가 · 고층",
+          "area": "전용 59㎡",
+          "amount": "약 3억 1,000만 원",
+          "date": "확인일 미기재",
+          "sourceUrl": "https://realty.daangn.com/complexes/10525494",
+          "note": "원문의 예산 상한 3억 원을 넘는 비교 자료입니다."
+        },
+        {
+          "label": "과거 공공 공급가격 · 접수 종료",
+          "area": "전용 59㎡",
+          "amount": "2억 2,100~2억 2,350만 원",
+          "date": "9월 접수 종료 · 연도 미기재",
+          "sourceUrl": "https://www.umca.co.kr/umca/bbs/view.do?bbsId=BBS_0000000000000003&dataId=4505&mId=001001003000000000",
+          "note": "원문에서 이미 종료된 공가 일반분양으로 안내했습니다. 현재 매물 가격이 아닙니다."
+        },
+        {
+          "label": "과거 공공 공급가격 · 접수 종료",
+          "area": "전용 74㎡",
+          "amount": "2억 7,900만 원",
+          "date": "9월 접수 종료 · 연도 미기재",
+          "sourceUrl": "https://www.umca.co.kr/umca/bbs/view.do?bbsId=BBS_0000000000000003&dataId=4505&mId=001001003000000000",
+          "note": "원문에서 이미 종료된 공가 일반분양으로 안내했습니다. 현재 매물 가격이 아닙니다."
+        }
+      ],
+      "lookFor": [
+        "복도와 현관 앞 통행량, 창밖 시선과 채광",
+        "주차장에서 공동현관까지의 동선",
+        "율리 생활권의 장보기·버스·산책 동선"
+      ],
+      "naverUrl": "https://m.land.naver.com/search/result/%EB%AC%B8%EC%88%98%EB%8D%B0%EC%8B%9C%EC%95%992%EB%8B%A8%EC%A7%80",
+      "naverLinkLabel": "네이버 부동산에서 단지명 검색",
+      "naverLinkStatus": {
+        "verified": true,
+        "checkedOn": "2026-10-02",
+        "kind": "search",
+        "note": "브라우저에서 연결된 네이버부동산 화면의 단지명을 확인했습니다. 현재 매물과 가격은 별도로 재검증하지 않았습니다."
+      },
+      "sources": [
+        {
+          "label": "당근부동산 · 원문 일반 매물 출처",
+          "url": "https://realty.daangn.com/complexes/10525494"
+        },
+        {
+          "label": "울산도시공사 · 과거 공급 공고",
+          "url": "https://www.umca.co.kr/umca/bbs/view.do?bbsId=BBS_0000000000000003&dataId=4505&mId=001001003000000000"
+        },
+        {
+          "label": "KB부동산 · 원문 단지 정보",
+          "url": "https://kbland.kr/se/c/1093801"
+        }
+      ],
+      "watchOnly": false
+    },
+    {
+      "id": "deokha-hanyang",
+      "name": "덕하한양수자인",
+      "areaLabel": "울산 울주군 청량읍 상남리",
+      "setting": "남울산 외곽 주거지",
+      "year": 2018,
+      "households": 572,
+      "summary": "남구·울주 남부 방향의 일상 동선을 생각하며 살펴볼 후보예요. 같은 면적이어도 동·층·향과 매물별 가격을 나눠서 보고 싶어요.",
+      "priceSummary": "전용 57.87㎡ · 조사자료의 2026년 거래 2억 6,000~3억 300만 원",
+      "tags": [
+        "생활 동선",
+        "중규모 단지"
+      ],
+      "prices": [
+        {
+          "label": "실거래 범위 · 원문 인용",
+          "area": "전용 57.87㎡",
+          "amount": "2억 6,000~3억 300만 원",
+          "date": "2026년",
+          "sourceUrl": "https://www.theoneulsan.com/listings/%EC%9A%B8%EC%82%B0/%EC%9A%B8%EC%A3%BC%EA%B5%B0/%EC%B2%AD%EB%9F%89%EC%9D%8D%20%EC%83%81%EB%82%A8%EB%A6%AC/%EB%8D%95%ED%95%98%ED%95%9C%EC%96%91%EC%88%98%EC%9E%90%EC%9D%B8",
+          "note": "범위에 3억 원을 넘는 거래도 포함됩니다."
+        },
+        {
+          "label": "실거래 · 원문 인용",
+          "area": "전용 57.87㎡",
+          "amount": "3억 원",
+          "date": "9월 23일 · 원문 2026년 거래 문맥",
+          "sourceUrl": "https://www.theoneulsan.com/listings/%EC%9A%B8%EC%82%B0/%EC%9A%B8%EC%A3%BC%EA%B5%B0/%EC%B2%AD%EB%9F%89%EC%9D%8D%20%EC%83%81%EB%82%A8%EB%A6%AC/%EB%8D%95%ED%95%98%ED%95%9C%EC%96%91%EC%88%98%EC%9E%90%EC%9D%B8"
+        },
+        {
+          "label": "실거래 · 고층",
+          "area": "전용 57.87㎡",
+          "amount": "2억 9,400만 원 / 2억 9,500만 원",
+          "date": "7월 · 원문 2026년 거래 문맥",
+          "sourceUrl": "https://www.theoneulsan.com/listings/%EC%9A%B8%EC%82%B0/%EC%9A%B8%EC%A3%BC%EA%B5%B0/%EC%B2%AD%EB%9F%89%EC%9D%8D%20%EC%83%81%EB%82%A8%EB%A6%AC/%EB%8D%95%ED%95%98%ED%95%9C%EC%96%91%EC%88%98%EC%9E%90%EC%9D%B8"
+        },
+        {
+          "label": "실거래 · 3층",
+          "area": "전용 57.87㎡",
+          "amount": "2억 7,000만 원",
+          "date": "7월 · 원문 2026년 거래 문맥",
+          "sourceUrl": "https://www.theoneulsan.com/listings/%EC%9A%B8%EC%82%B0/%EC%9A%B8%EC%A3%BC%EA%B5%B0/%EC%B2%AD%EB%9F%89%EC%9D%8D%20%EC%83%81%EB%82%A8%EB%A6%AC/%EB%8D%95%ED%95%98%ED%95%9C%EC%96%91%EC%88%98%EC%9E%90%EC%9D%B8"
+        }
+      ],
+      "lookFor": [
+        "동·층·향별 채광과 실제 창밖 풍경",
+        "장보기·버스정류장·공동현관 동선",
+        "직장 위치를 기준으로 한 남구·울주 남부 출퇴근 시간"
+      ],
+      "naverUrl": "https://m.land.naver.com/search/result/%EB%8D%95%ED%95%98%ED%95%9C%EC%96%91%EC%88%98%EC%9E%90%EC%9D%B8",
+      "naverLinkLabel": "네이버 부동산에서 단지명 검색",
+      "naverLinkStatus": {
+        "verified": true,
+        "checkedOn": "2026-10-02",
+        "kind": "search",
+        "note": "브라우저에서 연결된 네이버부동산 화면의 단지명을 확인했습니다. 현재 매물과 가격은 별도로 재검증하지 않았습니다."
+      },
+      "sources": [
+        {
+          "label": "더원울산 · 원문 실거래 출처",
+          "url": "https://www.theoneulsan.com/listings/%EC%9A%B8%EC%82%B0/%EC%9A%B8%EC%A3%BC%EA%B5%B0/%EC%B2%AD%EB%9F%89%EC%9D%8D%20%EC%83%81%EB%82%A8%EB%A6%AC/%EB%8D%95%ED%95%98%ED%95%9C%EC%96%91%EC%88%98%EC%9E%90%EC%9D%B8"
+        }
+      ],
+      "watchOnly": false
+    },
+    {
+      "id": "seonam-eco-heights",
+      "name": "선암에코하이츠",
+      "areaLabel": "울산 남구 · 선암호수공원 생활권",
+      "setting": "호수 주변 · 더 살펴볼 후보",
+      "year": 2015,
+      "households": 499,
+      "summary": "선암호수공원 생활권에서 함께 살펴볼 대기 후보예요. 자료에 적힌 평균가격을 실제 3억 원 이하 매물로 보지는 않고, 조건이 맞는 집이 있는지 다시 확인하려고 해요.",
+      "priceSummary": "면적 미기재 · 조사자료의 KB 일반가 3억 1,250만 원",
+      "tags": [
+        "호수",
+        "추가 확인"
+      ],
+      "prices": [
+        {
+          "label": "KB 일반가 · 원문 인용",
+          "area": "면적 미기재",
+          "amount": "3억 1,250만 원",
+          "date": "기준일 미기재",
+          "sourceUrl": "https://kbland.kr/se/c/27127"
+        },
+        {
+          "label": "KB 하위 평균가 · 원문 인용",
+          "area": "면적 미기재",
+          "amount": "2억 9,250만 원",
+          "date": "기준일 미기재",
+          "sourceUrl": "https://kbland.kr/se/c/27127",
+          "note": "특정 매물의 호가가 아닙니다."
+        },
+        {
+          "label": "매물 평균가 · 원문 인용",
+          "area": "면적 미기재",
+          "amount": "약 3억 2,632만 원",
+          "date": "기준일 미기재",
+          "sourceUrl": "https://kbland.kr/se/c/27127",
+          "note": "개별 매물의 가격과 조건은 다를 수 있습니다."
+        }
+      ],
+      "lookFor": [
+        "3억 원 이하 실제 매물의 면적·동·층·향",
+        "호수까지 걷는 길과 집의 실제 조망",
+        "같은 생활권의 선암아크리티와 관리비·생활 동선 비교"
+      ],
+      "naverUrl": "https://m.land.naver.com/search/result/%EC%84%A0%EC%95%94%EC%97%90%EC%BD%94%ED%95%98%EC%9D%B4%EC%B8%A0",
+      "naverLinkLabel": "네이버 부동산에서 단지명 검색",
+      "naverLinkStatus": {
+        "verified": true,
+        "checkedOn": "2026-10-02",
+        "kind": "search",
+        "note": "브라우저에서 연결된 네이버부동산 화면의 단지명을 확인했습니다. 현재 매물과 가격은 별도로 재검증하지 않았습니다."
+      },
+      "sources": [
+        {
+          "label": "KB부동산 · 원문 시세 출처",
+          "url": "https://kbland.kr/se/c/27127"
+        }
+      ],
+      "watchOnly": true
+    }
+  ]
+}

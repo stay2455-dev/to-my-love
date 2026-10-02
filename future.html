@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f6f2ea" />
+    <meta name="robots" content="noindex, nofollow, noarchive" />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="description" content="다음에 같이 찍을 사진, 함께 살아보고 싶은 동네." />
+    <title>우리의 미래 — 우리 사진첩</title>
+    <link rel="icon" type="image/svg+xml" href="assets/album-mark.svg" />
+    <link rel="stylesheet" href="styles.css?v=album-4" />
+    <link rel="stylesheet" href="chapters.css?v=1" />
+    <link rel="stylesheet" href="future.css?v=1" />
+    <script type="module" src="chapters.js?v=1"></script>
+    <script type="module" src="future.js?v=1"></script>
+  </head>
+  <body class="chapters-page future-page">
+    <a class="skip-link" href="#future-main">내용으로 건너뛰기</a>
+    <header class="chapters-header chapters-shell">
+      <a href="index.html"><img src="assets/album-mark.svg" alt="" />우리 사진첩</a>
+      <span>우리의 미래</span>
+    </header>
+    <main id="future-main" class="chapters-shell">
+      <div class="chapters-intro future-intro">
+        <p class="chapters-eyebrow">우리의 미래</p>
+        <h1>아직 찍지 않은<br />우리의 사진들.</h1>
+        <p>사진을 찍을 곳도, 함께 지낼 동네도.<br />하나씩 같이 골라보자.</p>
+        <nav class="future-jumps" aria-label="미래 이야기"><a href="#next-photos">다음에 같이 찍을 사진 <span aria-hidden="true">↓</span></a><a href="#homes">함께 살아보고 싶은 동네 <span aria-hidden="true">↓</span></a></nav>
+      </div>
+      <section id="next-photos" class="future-section" aria-labelledby="next-photos-title">
+        <div class="future-section-heading"><span class="chapters-eyebrow">다음 사진</span><h2 id="next-photos-title">여기서, 우리 웨딩사진 찍을까?</h2><p>장소를 정하기 전에, 함께 남기고 싶은 장면부터.</p></div>
+        <div class="future-scenes">
+          <article class="future-scene scene-sea"><span class="scene-line" aria-hidden="true"></span><p class="scene-label">바다</p><h3>수평선 앞에서</h3><p>바람에 옷자락이 날려도 좋고.</p></article>
+          <article class="future-scene scene-trees"><span class="scene-line" aria-hidden="true"></span><p class="scene-label">숲과 정원</p><h3>같은 길을 걸으며</h3><p>나무 사이로 천천히 걸어도 좋겠다.</p></article>
+          <article class="future-scene scene-light"><span class="scene-line" aria-hidden="true"></span><p class="scene-label">실내와 건물</p><h3>빛이 드는 창가에서</h3><p>그날은 조금 멋을 내보고.</p></article>
+          <article class="future-scene scene-us"><span class="scene-line" aria-hidden="true"></span><p class="scene-label">우리의 장소</p><h3>익숙한 곳에서, 새롭게</h3><p>우리가 좋아하던 곳에 다시 가도 좋겠어.</p></article>
+        </div>
+      </section>
+      <section id="homes" class="future-section future-homes" aria-labelledby="homes-title">
+        <div class="future-section-heading"><span class="chapters-eyebrow">함께 살아보고 싶은 동네</span><h2 id="homes-title">우리, 어디서 살아볼까?</h2><p>우선 울산에서 찾아본 곳들.<br />산책하고, 장을 보고, 집으로 돌아오는 하루를 생각하며.</p></div>
+        <div class="homes-research"><span>울산</span><span>매매 예산 3억 원까지</span><span>2010년 이후 준공</span></div>
+        <p id="homes-note" class="homes-note">2026. 10. 02에 모아둔 조사 기록입니다. 금액은 호가·실거래·시세를 구분해 적었으며, 현재 매물은 네이버부동산에서 확인할 수 있어요.</p>
+        <div class="homes-toolbar"><div class="home-filters" role="group" aria-label="주변 환경으로 후보 보기"><button type="button" data-setting="all" aria-pressed="true">전체</button><button type="button" data-setting="호수" aria-pressed="false">호수</button><button type="button" data-setting="강" aria-pressed="false">강</button><button type="button" data-setting="바다" aria-pressed="false">바다</button><button type="button" data-setting="산" aria-pressed="false">산</button></div><span id="homes-count" aria-live="polite"></span></div>
+        <div id="homes-message" role="status">후보를 펼치고 있어요.</div>
+        <div id="homes-grid" class="homes-grid" aria-busy="true"></div>
+        <p id="homes-empty" class="homes-empty" hidden>이 조건으로 모아둔 후보는 아직 없어요.</p>
+        <p class="homes-link-note">‘단지명 검색’은 네이버부동산 검색 결과로, ‘단지 보기’는 단지 페이지로 연결돼요.</p>
+      </section>
+      <div class="future-ending"><p>어디서 살지는 같이 고르자.</p><span>나는 너랑 보낼 하루가 더 궁금해.</span><a href="calendar.html">지나온 날들도 꺼내보기 <span aria-hidden="true">↗</span></a></div>
+      <noscript><p class="chapters-noscript">집 후보를 펼치려면 JavaScript를 켜주세요. <a href="https://m.land.naver.com/" target="_blank" rel="noopener noreferrer">네이버부동산 열기</a></p></noscript>
+    </main>
+    <footer class="chapters-footer chapters-shell"><span>우리 사진첩</span><a href="index.html#album">사진첩으로 돌아가기 ↗</a></footer>
+  </body>
+</html>

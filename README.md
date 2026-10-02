@@ -49,7 +49,25 @@ imageio-ffmpeg가 필요합니다. `planning/runtime` 설치 또는 일반 Pytho
 필수 음악 출처는 영상 내부 저작권 정보와 함께 배포하는 `music-credits.txt`,
 페이지의 `rel="license"`에 보존하고, 감상 화면에 제작 안내를 삽입하지 않습니다.
 
-## 검사
+## 추가 페이지
+
+기존 사진첩·표지·영상은 유지하고, 오른쪽 아래 `목차` 버튼에서 별도 페이지로 이동합니다.
+`chapters.js`와 `chapters.css`는 기존 뷰어의 주소·상태를 바꾸지 않는 사이드메뉴입니다.
+
+- `calendar.html`: 실제 촬영일이 있는 사진·영상만 표시하는 달력. 기록된 월과 날짜를
+  선택하면 해당 추억을 기존 사진 뷰어로 열 수 있습니다. 선택일은 `?date=YYYY-MM-DD`로
+  보존하며, 날짜 미상 자료는 기존 사진첩으로 연결합니다.
+- `future.html`: 웨딩사진으로 남기고 싶은 네 가지 분위기와 울산 주거 후보를 담습니다.
+  구체적인 웨딩 촬영 장소는 아직 확정하지 않았습니다.
+- `data/homes.json`: 2026-10-02에 받은 사용자 조사 자료를 정리한 5개 후보와 1개 대기 후보.
+  호가·실거래·KB·종료된 공급가격, 출처와 기록 시점을 분리합니다. 자동 시세 조회가
+  아니므로 가격을 갱신할 때는 해당 항목의 출처와 날짜도 함께 바꿉니다.
+  네이버 검색 링크 5개와 단지 링크 1개는 브라우저에서 단지명 연결을 확인했습니다.
+
+추가 기능 검사는 `node --test scripts/test_calendar.cjs scripts/test_chapters.cjs`로 실행합니다.
+별도 worktree에서는 `TEST_JSDOM_PATH`에 기존 jsdom 설치 디렉터리를 지정할 수 있습니다.
+
+## 기존 사진첩 검사
 
 `npm install --prefix planning/test-runtime jsdom@26.1.0` 후
 `node --test scripts/test_album.cjs scripts/test_experience.cjs`로 분류·탐색,

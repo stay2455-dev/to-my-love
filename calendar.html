@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f6f2ea" />
+    <meta name="description" content="달력에서 다시 펼쳐보는 그날의 우리." />
+    <meta name="robots" content="noindex, nofollow, noarchive" />
+    <meta name="referrer" content="no-referrer" />
+    <title>그날의 우리 · 우리 사진첩</title>
+    <link rel="icon" type="image/svg+xml" href="assets/album-mark.svg" />
+    <link rel="preload" href="assets/fonts/MaruBuri-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="styles.css?v=album-4" />
+    <link rel="stylesheet" href="chapters.css?v=1" />
+    <link rel="stylesheet" href="calendar.css?v=1" />
+    <script type="module" src="chapters.js?v=1"></script>
+    <script type="module" src="calendar.js?v=1"></script>
+  </head>
+  <body class="chapters-page calendar-page">
+    <a class="skip-link" href="#calendar-main">달력으로 건너뛰기</a>
+    <header class="chapters-header chapters-shell" id="top">
+      <a class="wordmark" href="index.html" aria-label="우리 사진첩 처음으로">
+        <svg class="album-mark" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect x="4.5" y="3.5" width="19" height="22" rx="1"/><path d="M9 4v21M2 9h5M2 15h5M2 21h5"/><rect x="12.5" y="9" width="7" height="9" rx=".4"/></svg>
+        우리 사진첩
+      </a>
+      <span class="cal-header-label">그날의 우리</span>
+    </header>
+    <main class="chapters-shell" id="calendar-main">
+      <div class="chapters-intro">
+        <p class="chapters-eyebrow">날짜로 꺼내 보는 추억</p>
+        <h1>그날의 우리</h1>
+        <p>작은 사진이 놓인 날을 눌러봐.<br />그날 함께 남긴 장면들이 있어.</p>
+      </div>
+      <div id="cal-status" class="cal-status" role="status" aria-live="polite"><p>달력을 펼치고 있어요.</p></div>
+      <div id="cal-content" class="cal-layout" hidden>
+        <section class="cal-sheet" aria-labelledby="cal-month-title">
+          <div class="cal-controls">
+            <div class="cal-selects">
+              <label><span class="sr-only">기록 연도</span><select id="cal-year" aria-label="기록 연도"></select></label>
+              <label><span class="sr-only">기록된 월</span><select id="cal-month" aria-label="기록된 월"></select></label>
+            </div>
+            <div class="cal-month-arrows">
+              <button type="button" id="cal-prev" aria-label="이전 기록 월" aria-controls="cal-days"><span aria-hidden="true">←</span></button>
+              <button type="button" id="cal-next" aria-label="다음 기록 월" aria-controls="cal-days"><span aria-hidden="true">→</span></button>
+            </div>
+          </div>
+          <div class="cal-month-heading"><h2 id="cal-month-title"></h2><p id="cal-month-count"></p></div>
+          <p class="sr-only" id="cal-keyboard-help">방향키로 날짜 사이를 이동하고 Enter 키로 선택할 수 있어요.</p>
+          <table class="cal-table" aria-labelledby="cal-month-title" aria-describedby="cal-keyboard-help">
+            <thead><tr><th scope="col">일</th><th scope="col">월</th><th scope="col">화</th><th scope="col">수</th><th scope="col">목</th><th scope="col">금</th><th scope="col">토</th></tr></thead>
+            <tbody id="cal-days"></tbody>
+          </table>
+          <div class="cal-legend"><span class="cal-legend-dot" aria-hidden="true"></span><span>기록이 있는 날</span><span class="cal-legend-selected" aria-hidden="true"></span><span>선택한 날</span></div>
+        </section>
+        <section class="cal-detail" aria-labelledby="cal-selected-title">
+          <div class="cal-detail-heading"><p class="chapters-eyebrow">이날의 기록</p><h2 id="cal-selected-title"></h2><p id="cal-selected-count" aria-live="polite"></p></div>
+          <div id="cal-stories" class="cal-stories"></div>
+        </section>
+      </div>
+      <a class="cal-undated" href="index.html?year=undated#album"><span>날짜 없이 모아둔 기록도 있어.</span><span>모아둔 사진 보기 <span aria-hidden="true">↗</span></span></a>
+      <noscript><p class="cal-noscript">달력을 보려면 브라우저에서 JavaScript를 켜주세요. <a href="index.html">사진첩으로 돌아가기</a></p></noscript>
+    </main>
+    <footer class="chapters-footer chapters-shell"><span>우리 사진첩</span><a href="index.html#album">사진첩으로 돌아가기 ↗</a></footer>
+  </body>
+</html>
