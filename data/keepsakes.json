@@ -1,0 +1,65 @@
+{
+  "montages": [
+    {
+      "id": "together",
+      "title": "우리",
+      "alt": "바다와 놀이공원, 함께 지나온 계절의 사진",
+      "src": "assets/keepsakes/together.webp",
+      "thumb": "assets/keepsakes/together-small.webp",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "seaside",
+      "title": "바다 곁에서",
+      "alt": "노을 진 바다 앞에서 함께 찍은 사진",
+      "src": "assets/keepsakes/seaside.webp",
+      "thumb": "assets/keepsakes/seaside-small.webp",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "carousel",
+      "title": "반짝이던 밤",
+      "alt": "회전목마와 불빛 아래에서 함께 찍은 사진",
+      "src": "assets/keepsakes/carousel.webp",
+      "thumb": "assets/keepsakes/carousel-small.webp",
+      "width": 1122,
+      "height": 1402
+    },
+    {
+      "id": "seasons",
+      "title": "같은 계절",
+      "alt": "나무와 폭포, 햇빛이 비치는 길에서 함께 찍은 사진",
+      "src": "assets/keepsakes/seasons.webp",
+      "thumb": "assets/keepsakes/seasons-small.webp",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "spring",
+      "title": "우리의 봄",
+      "alt": "벚꽃과 사진관, 분홍빛 옷을 입고 함께 찍은 사진",
+      "src": "assets/keepsakes/spring.webp",
+      "thumb": "assets/keepsakes/spring-small.webp",
+      "width": 1122,
+      "height": 1402
+    }
+  ],
+  "films": [
+    {
+      "id": "our-days",
+      "title": "우리의 모든 날들",
+      "duration": 510,
+      "src": "assets/keepsakes/our-days.mp4",
+      "poster": "assets/keepsakes/our-days-poster.webp"
+    },
+    {
+      "id": "promise",
+      "title": "너의 행복을 약속할게.",
+      "duration": 192,
+      "src": "assets/keepsakes/promise.mp4",
+      "poster": "assets/keepsakes/promise-poster.webp"
+    }
+  ]
+}

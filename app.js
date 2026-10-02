@@ -93,12 +93,12 @@ function renderThemes() {
     const button = node('button', 'theme-card');
     button.type = 'button'; button.dataset.category = category.id;
     const count = stories.filter(story => story.category === category.id).length;
-    button.setAttribute('aria-label', `${category.title}, ${count}개의 기록 보기`);
+    button.setAttribute('aria-label', `${category.title}, ${count}개의 추억 보기`);
     button.setAttribute('aria-pressed', String(currentCategory === category.id));
     const cover = node('span', 'theme-photo');
     cover.append(makeImage(itemById.get(category.coverId)));
     const title = node('span', 'theme-title', category.title);
-    const tally = node('span', 'theme-count', `${count}개의 기록`);
+    const tally = node('span', 'theme-count', `${count}개의 추억`);
     button.append(cover, title, tally);
     button.addEventListener('click', () => changeFilters({ category: category.id, year: 'all', query: '', view: 'stories' }, true));
     return button;
@@ -126,7 +126,7 @@ function storyCard(story) {
   const footer = node('span', 'story-meta');
   if (story.date) {
     const time = node('time', '', shortDate(story.date)); time.dateTime = story.date; footer.append(time);
-  } else footer.append(node('span', '', '모아둔 장면'));
+  }
   footer.append(node('span', '', mediaCount(story)));
   copy.append(footer); button.append(image, copy);
   button.addEventListener('click', () => openStory(story.id, button));
@@ -138,7 +138,7 @@ function renderStories(selection) {
   $('#story-grid').replaceChildren(...selection.slice(0, storyLimit).map(storyCard));
   const remaining = Math.max(0, selection.length - storyLimit);
   $('#load-more').hidden = !remaining || currentView !== 'stories';
-  $('#load-more').textContent = `기록 더 보기 · ${remaining}`;
+  $('#load-more').textContent = `추억 더 보기 · ${remaining}`;
 }
 
 function previewsFor(list) {
@@ -230,7 +230,7 @@ function renderArchive() {
   const selectedItems = items.filter(item => ids.has(item.id));
   const photoCount = selectedItems.filter(item => item.kind === 'image').length;
   const videoCount = selectedItems.length - photoCount;
-  $('#album-count').textContent = currentView === 'stories' ? `${selection.length}개의 기록` : mediaCount({ photoCount, videoCount }) || '0장의 사진';
+  $('#album-count').textContent = currentView === 'stories' ? `${selection.length}개의 추억` : mediaCount({ photoCount, videoCount }) || '0장의 사진';
   $$('[data-category]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.category === currentCategory)));
   $$('[data-view]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.view === currentView)));
   $('#story-grid').hidden = currentView !== 'stories'; $('#timeline').hidden = currentView !== 'photos';
@@ -267,7 +267,7 @@ function showItem(index) {
   } else { media.alt = item.alt; media.decoding = 'async'; }
   media.addEventListener('error', () => {
     if (mediaHost.firstElementChild !== media) return;
-    const message = node('p', 'viewer-error', '파일을 불러오지 못했어요. ');
+    const message = node('p', 'viewer-error', `${item.kind === 'video' ? '영상을' : '사진을'} 열지 못했어요. `);
     const link = node('a', '', '새 창에서 보기'); link.href = item.src; link.target = '_blank'; link.rel = 'noopener';
     message.append(link); mediaHost.replaceChildren(message);
   });
@@ -370,17 +370,11 @@ mediaHost.addEventListener('touchend', event => {
 }, { passive: true });
 mediaHost.addEventListener('touchcancel', () => { touchStart = null; }, { passive: true });
 window.addEventListener('popstate', () => { if (viewer.open) finishClose(); followPhotoHash(); });
-for (const link of $$('.hero [data-memory]')) {
-  link.addEventListener('click', event => {
-    const item = itemById.get(link.dataset.memory); if (!item) return;
-    event.preventDefault(); openStory(item.storyId, link, item.id);
-  });
-}
 
 async function loadAlbum() {
   $('#story-grid').setAttribute('aria-busy', 'true');
   try {
-    const response = await fetch('data/memories.json?v=album-2');
+    const response = await fetch('data/memories.json?v=album-3');
     if (!response.ok) throw new Error(`Album ${response.status}`);
     const data = await response.json();
     if (!data.items?.length || !data.stories?.length || !data.categories?.length) throw new Error('Missing curated album');

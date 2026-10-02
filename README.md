@@ -11,6 +11,12 @@
 추억 묶음/사진 전체 전환, 월별 사진 펼치기, 전체 비율 사진 보기,
 이전·다음 추억 탐색, 키보드·터치 탐색, 수동 영상 재생을 지원합니다.
 
+첫 방문은 천 표지 사진첩을 펼치는 연출로 시작합니다. 기존에 완성한 몽타주
+5장과 영상 두 편(8분 30초, 3분 12초)을 거쳐 주제별 추억으로 이어집니다.
+영상은 직접 재생할 때만 소리가 나오며, 다른 영상이나 확대 사진을 열면
+기존 재생이 멈춥니다. 공유된 개별 사진·검색 링크는 표지를 건너뜁니다.
+움직임 줄이기 설정에서는 표지 애니메이션 없이 바로 펼쳐집니다.
+
 미리보기에는 HTTP 서버가 필요합니다. 예: `python -m http.server 4173`.
 `file://`로 열면 브라우저 보안 정책 때문에 사진 목록을 읽을 수 없습니다.
 
@@ -19,6 +25,8 @@
 - `data/memories.json`: 날짜순 사진·영상 목록. 날짜가 없으면 추측하지 않습니다.
 - `data/curation.json`: 실제 장면을 확인한 주제·추억 묶음·대표 사진·짧은 제목.
 - `assets/album/`: 공개용 WebP 이미지·미리보기와 H.264/AAC 영상.
+- `assets/keepsakes/`, `data/keepsakes.json`: 완성 몽타주·영상의 사이트용 사본.
+- `experience.js`: 표지 열기, 몽타주 확대, 완성 영상 선택과 재생.
 - `scripts/catalog_media.py`: 로컬 `사진/` 원본에서 촬영 날짜와 중복을 확인합니다.
 - `scripts/date-overrides.json`: 사진 자체에 인쇄된 날짜를 직접 확인한 예외 기록.
 - `scripts/prepare_media.py`: 원본을 변경하지 않고 공개 사본과 목록을 만듭니다.
@@ -34,12 +42,21 @@ imageio-ffmpeg가 필요합니다. `planning/runtime` 설치 또는 일반 Pytho
 분류하지 않은 자료가 있으면 재생성을 중단하며, 날짜 있는 자료와 없는 자료를
 한 추억에 섞어 촬영일을 추정하지 않습니다.
 
+`python scripts/prepare_experience.py`는 로컬 `assets/images/`와 `결과물/`의
+완성본에서 웹용 사본을 만듭니다. 원본, 작업용 미리보기·렌더링 자료는 게시하지
+않습니다. 기존 출력이 있으면 영상을 재인코딩하지 않습니다.
+필수 음악 출처는 영상 내부 저작권 정보와 함께 배포하는 `music-credits.txt`,
+페이지의 `rel="license"`에 보존하고, 감상 화면에 제작 안내를 삽입하지 않습니다.
+
 ## 검사
 
 `npm install --prefix planning/test-runtime jsdom@26.1.0` 후
-`node --test scripts/test_album.cjs`로 목록·분류·검색·탐색 동작 등 13개 항목을 검사합니다.
+`node --test scripts/test_album.cjs scripts/test_experience.cjs`로 분류·탐색,
+표지 열기, 몽타주 이동, 영상 전환·재생 제어, 수신자용 문구 등 26개 항목을 검사합니다.
 `python scripts/verify_media.py`는 원본 무변경, 날짜 근거, 공개 사본의
 위치 메타데이터 제거와 이미지·영상 파일 무결성을 확인합니다.
+`python scripts/verify_experience.py`는 완성 영상 두 편의 전체 디코딩, 길이,
+웹 재생용 형식, 음악 출처 보존 및 몽타주 사본 무결성을 확인합니다.
 DOM 검사는 실제 화면 배치나 기기별 재생 검사를 대체하지 않습니다.
 
 ## 글꼴

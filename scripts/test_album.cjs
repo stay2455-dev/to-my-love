@@ -81,7 +81,7 @@ test('201 unique media are each assigned to one of 94 scenes and six reviewed ca
 test('the home shelf has six real covers, pagination preserves chronological scenes', async () => {
   const dom = await setup(); const doc = dom.window.document;
   assert.equal($$(doc, '.theme-card').length, 6);
-  assert.equal($(doc, '#album-count').textContent, '94개의 기록');
+  assert.equal($(doc, '#album-count').textContent, '94개의 추억');
   assert.equal(renderedStories(doc).length, 12);
   while (!$(doc, '#load-more').hidden) $(doc, '#load-more').click();
   assert.deepEqual(renderedStories(doc).map(x => x.id), data.stories.map(x => x.id));
@@ -95,7 +95,7 @@ test('every subject can be opened and category counts are not cosmetic', async (
   for (const category of data.categories) {
     $(doc, `.theme-card[data-category="${category.id}"]`).click();
     const expected = data.stories.filter(story => story.category === category.id);
-    assert.equal($(doc, '#album-count').textContent, `${expected.length}개의 기록`);
+    assert.equal($(doc, '#album-count').textContent, `${expected.length}개의 추억`);
     assert.ok(renderedStories(doc).every(story => story.category === category.id));
     assert.equal($$(doc, '#topic-tabs [aria-pressed="true"]').length, 1);
     assert.equal(new URL(dom.window.location).searchParams.get('topic'), category.id);
@@ -108,9 +108,9 @@ test('category, year and specific words intersect correctly, including empty res
   $(doc, '.theme-card[data-category="walk"]').click(); selectYear(dom, '2025'); search(dom, '벚꽃');
   assert.equal(renderedStories(doc).length, 1);
   assert.equal(renderedStories(doc)[0].title, '벚꽃 아래서');
-  assert.equal($(doc, '#album-count').textContent, '1개의 기록');
+  assert.equal($(doc, '#album-count').textContent, '1개의 추억');
   search(dom, '없는검색어'); assert.ok(!$(doc, '#empty-state').hidden);
-  $(doc, '#empty-reset').click(); assert.equal($(doc, '#album-count').textContent, '94개의 기록');
+  $(doc, '#empty-reset').click(); assert.equal($(doc, '#album-count').textContent, '94개의 추억');
   assert.equal($(doc, '#year-filter').value, 'all'); assert.equal($(doc, '#memory-search').value, '');
   search(dom, '커피');
   assert.ok(renderedStories(doc).length > 0 && renderedStories(doc).length < 10, 'Coffee search must not select every meal');
@@ -207,7 +207,7 @@ test('unknown filter values fall back safely and literal search text cannot inje
   const doc = dom.window.document;
   assert.equal($(doc, '#year-filter').value, 'all'); assert.ok(!$(doc, '#empty-state').hidden);
   assert.equal($$(doc, 'img[src="x"]').length, 0);
-  $(doc, '#empty-reset').click(); assert.equal($(doc, '#album-count').textContent, '94개의 기록');
+  $(doc, '#empty-reset').click(); assert.equal($(doc, '#album-count').textContent, '94개의 추억');
   dom.window.close();
 });
 
@@ -226,6 +226,6 @@ test('load failure has an accessible retry and successful recovery does not dupl
   dom.window.fetch = async () => ({ ok: true, json: async () => structuredClone(data) });
   $(doc, '.retry-button').click(); await tick();
   assert.equal($$(doc, '.theme-card').length, 6); assert.equal(renderedStories(doc).length, 12);
-  $(doc, '.hero [data-memory]').click(); await close(dom);
+  $(doc, '#story-grid button').click(); await close(dom);
   assert.equal(dom.window.location.hash, ''); dom.window.close();
 });

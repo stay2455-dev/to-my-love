@@ -1,0 +1,18 @@
+Music attribution for our-days.mp4 and promise.mp4
+
+Piano: Salamander Grand Piano V3 by Alexander Holm.
+Yamaha C5 stereo recordings, licensed under CC BY 3.0 Unported.
+Source: https://github.com/sfzinstruments/SalamanderGrandPiano
+License: https://creativecommons.org/licenses/by/3.0/
+Samples were resampled, mixed, equalized and reverberated.
+
+Strings: VSCO 2 Community Edition, Versilian Studios.
+Recordings: Sam Gossner and Simon Dalzell.
+Sample cutting: Elan Hickler / Soundemote.
+CC0 1.0 Public Domain Dedication.
+Source: https://github.com/sgossner/VSCO-2-CE
+License: https://creativecommons.org/publicdomain/zero/1.0/
+Samples were resampled, enveloped, mixed, equalized and reverberated.
+
+The compositions are original. The recordings above were used as instruments,
+not as pre-existing songs. Sound effects are original procedural recordings.
