@@ -374,7 +374,7 @@ window.addEventListener('popstate', () => { if (viewer.open) finishClose(); foll
 async function loadAlbum() {
   $('#story-grid').setAttribute('aria-busy', 'true');
   try {
-    const response = await fetch('data/memories.json?v=album-3');
+    const response = await fetch('data/memories.json?v=album-4');
     if (!response.ok) throw new Error(`Album ${response.status}`);
     const data = await response.json();
     if (!data.items?.length || !data.stories?.length || !data.categories?.length) throw new Error('Missing curated album');

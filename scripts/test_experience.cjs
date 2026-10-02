@@ -122,11 +122,11 @@ test('feature film needs a play gesture, selection stays silent, and previous po
   assert.equal(video.dataset.played, undefined); $(doc, '#feature-play').click(); await tick();
   assert.equal(video.dataset.played, '1'); assert.ok($(doc, '#feature-play').hidden);
   video.currentTime = 75;
-  $(doc, '[data-feature="promise"]').click();
-  assert.match(video.src, /promise\.mp4$/); assert.equal(video.dataset.paused, 'true');
-  assert.equal(video.dataset.played, '1'); assert.equal($(doc, '#feature-duration').textContent, '3:12');
   $(doc, '[data-feature="our-days"]').click();
-  Object.defineProperty(video, 'duration', { value: 510 });
+  assert.match(video.src, /our-days\.mp4$/); assert.equal(video.dataset.paused, 'true');
+  assert.equal(video.dataset.played, '1'); assert.equal($(doc, '#feature-duration').textContent, '8:30');
+  $(doc, '[data-feature="promise-174"]').click();
+  Object.defineProperty(video, 'duration', { value: 174 });
   video.dispatchEvent(new dom.window.Event('loadedmetadata'));
   assert.equal(video.currentTime, 75); assert.equal(video.dataset.played, '1');
   video.dispatchEvent(new dom.window.Event('ended'));
@@ -159,9 +159,9 @@ test('archive network failure does not block the cover, montages, or finished fi
   const video = $(doc, '#feature-video');
   video.play = async () => { throw new Error('network'); };
   $(doc, '#feature-play').click(); await tick();
-  assert.ok(!$(doc, '#feature-message').hidden); assert.match($(doc, '#feature-direct').href, /our-days\.mp4$/);
-  $(doc, '[data-feature="promise"]').click(); assert.ok($(doc, '#feature-message').hidden);
-  assert.match($(doc, '#feature-direct').href, /promise\.mp4$/); dom.window.close();
+  assert.ok(!$(doc, '#feature-message').hidden); assert.match($(doc, '#feature-direct').href, /promise-174\.mp4$/);
+  $(doc, '[data-feature="our-days"]').click(); assert.ok($(doc, '#feature-message').hidden);
+  assert.match($(doc, '#feature-direct').href, /our-days\.mp4$/); dom.window.close();
 });
 
 test('recipient copy has no production notes, placeholder language, invented dates, or technical labels', async () => {
@@ -200,11 +200,23 @@ test('canceled playback and rejected promises from a previous film do not show f
   const dom = await setup({ location: '#feature' }); const doc = dom.window.document;
   const video = $(doc, '#feature-video'); let rejectPlay;
   video.play = () => new Promise((resolve, reject) => { rejectPlay = reject; });
-  $(doc, '#feature-play').click(); $(doc, '[data-feature="promise"]').click();
+  $(doc, '#feature-play').click(); $(doc, '[data-feature="our-days"]').click();
   rejectPlay(new Error('outdated source')); await tick();
   assert.ok($(doc, '#feature-message').hidden); assert.ok(!$(doc, '#feature-play').hidden);
   video.play = async () => { const error = new Error('interrupted'); error.name = 'AbortError'; throw error; };
   $(doc, '#feature-play').click(); await tick();
   assert.ok($(doc, '#feature-message').hidden); assert.ok(!$(doc, '#feature-play').hidden);
+  dom.window.close();
+});
+
+test('the latest 174-second film is the default everywhere, without the earlier summary option', async () => {
+  const dom = await setup(); const doc = dom.window.document;
+  assert.match($(doc, '#feature-video').src, /promise-174\.mp4$/);
+  assert.match($(doc, '#feature-video').poster, /promise-174-poster\.webp$/);
+  assert.equal($(doc, '#feature-title').textContent, '너의 행복을 약속할게.');
+  assert.equal($(doc, '#feature-duration').textContent, '2:54');
+  assert.equal($(doc, '[data-feature][aria-current="true"]').dataset.feature, 'promise-174');
+  assert.deepEqual(keepsakes.films.map(film => film.duration), [174, 510]);
+  assert.ok(!$(doc, '[data-feature="promise"]')); assert.doesNotMatch(doc.body.textContent, /3:12/);
   dom.window.close();
 });

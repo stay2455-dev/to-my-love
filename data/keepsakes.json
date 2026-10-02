@@ -48,18 +48,18 @@
   ],
   "films": [
     {
+      "id": "promise-174",
+      "title": "너의 행복을 약속할게.",
+      "duration": 174,
+      "src": "assets/keepsakes/promise-174.mp4",
+      "poster": "assets/keepsakes/promise-174-poster.webp"
+    },
+    {
       "id": "our-days",
       "title": "우리의 모든 날들",
       "duration": 510,
       "src": "assets/keepsakes/our-days.mp4",
       "poster": "assets/keepsakes/our-days-poster.webp"
-    },
-    {
-      "id": "promise",
-      "title": "너의 행복을 약속할게.",
-      "duration": 192,
-      "src": "assets/keepsakes/promise.mp4",
-      "poster": "assets/keepsakes/promise-poster.webp"
     }
   ]
 }

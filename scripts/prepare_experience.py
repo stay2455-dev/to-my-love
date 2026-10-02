@@ -20,8 +20,8 @@ SOURCES = [
     ('spring', 'montage-spring-v1.png', '우리의 봄', '벚꽃과 사진관, 분홍빛 옷을 입고 함께 찍은 사진'),
 ]
 FILMS = [
+    ('promise-174', '너의_행복을_약속할게_본편_2분54초_공유용_720p.mp4', '너의 행복을 약속할게.', 174, 44),
     ('our-days', '우리의_모든_날들_시간순_1080p.mp4', '우리의 모든 날들', 510, 57),
-    ('promise', '너의_행복을_약속할게_1080p.mp4', '너의 행복을 약속할게.', 192, 30),
 ]
 CREDIT = ('Piano samples: Salamander Grand Piano V3, Alexander Holm, CC BY 3.0; '
           'https://github.com/sfzinstruments/SalamanderGrandPiano ; '
@@ -59,12 +59,14 @@ def film_copy(entry):
     dest = OUT / f'{id}.mp4'
     ffmpeg = imageio_ffmpeg.get_ffmpeg_exe()
     if not dest.exists():
+        encoding = ['-c', 'copy'] if id == 'promise-174' else [
+            '-vf', 'scale=1280:720:flags=lanczos', '-c:v', 'libx264', '-preset', 'medium',
+            '-crf', '24', '-maxrate', '1600k', '-bufsize', '3200k', '-threads', '2',
+            '-pix_fmt', 'yuv420p', '-color_primaries', 'bt709', '-color_trc', 'bt709',
+            '-colorspace', 'bt709', '-c:a', 'aac', '-b:a', '160k']
         subprocess.run([ffmpeg, '-y', '-v', 'error', '-nostdin', '-i', str(source),
                         '-map', '0:v:0', '-map', '0:a:0', '-map_metadata', '-1', '-map_chapters', '-1',
-                        '-vf', 'scale=1280:720:flags=lanczos', '-c:v', 'libx264', '-preset', 'medium',
-                        '-crf', '24', '-maxrate', '1600k', '-bufsize', '3200k', '-threads', '2',
-                        '-pix_fmt', 'yuv420p', '-color_primaries', 'bt709', '-color_trc', 'bt709',
-                        '-colorspace', 'bt709', '-c:a', 'aac', '-b:a', '160k',
+                        *encoding,
                         '-metadata', f'title={title}', '-metadata', f'copyright={CREDIT}',
                         '-movflags', '+faststart', str(dest)], check=True)
     assert dest.stat().st_size < 100 * 1024 * 1024

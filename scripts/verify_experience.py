@@ -32,6 +32,16 @@ def verify(film):
     assert 'creation_time' not in probe and 'location' not in probe.lower()
     raw = path.read_bytes()
     assert raw.index(b'moov') < raw.index(b'mdat')
+    if film['id'] == 'promise-174':
+        source = ROOT / '결과물/너의_행복을_약속할게_본편_2분54초_공유용_720p.mp4'
+        hashes = []
+        for target in [source, path]:
+            result = subprocess.run([ffmpeg, '-v', 'error', '-i', str(target), '-map', '0:v:0', '-map', '0:a:0',
+                                     '-c', 'copy', '-f', 'streamhash', '-hash', 'sha256', '-'],
+                                    check=True, capture_output=True, text=True)
+            hashes.append(result.stdout)
+        assert hashes[0] == hashes[1], 'Completed main film picture and sound must remain bit-identical.'
+        print('174-second film: encoded picture and audio match the completed source exactly.', flush=True)
     subprocess.run([ffmpeg, '-v', 'error', '-nostdin', '-threads', '2', '-i', str(path),
                     '-map', '0:v:0', '-map', '0:a:0', '-f', 'null', '-'], check=True, capture_output=True)
     print(f"{film['id']}: all picture/audio decoded, duration {duration}s, faststart and attribution present.", flush=True)
